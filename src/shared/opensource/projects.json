@@ -94,7 +94,7 @@
         },
         {
           "name": "Keras",
-          "iconifyClass": "logos-keras"
+          "iconifyClass": "simple-icons:keras"
         }
       ]
     }

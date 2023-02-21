@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.422a7b93.chunk.css",
-    "main.js": "./static/js/main.c2eff16e.chunk.js",
-    "main.js.map": "./static/js/main.c2eff16e.chunk.js.map",
+    "main.css": "./static/css/main.f1872355.chunk.css",
+    "main.js": "./static/js/main.5085f7e4.chunk.js",
+    "main.js.map": "./static/js/main.5085f7e4.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.fff6ee50.js",
     "runtime-main.js.map": "./static/js/runtime-main.fff6ee50.js.map",
-    "static/js/2.f6f068b3.chunk.js": "./static/js/2.f6f068b3.chunk.js",
-    "static/js/2.f6f068b3.chunk.js.map": "./static/js/2.f6f068b3.chunk.js.map",
+    "static/js/2.aef79d59.chunk.js": "./static/js/2.aef79d59.chunk.js",
+    "static/js/2.aef79d59.chunk.js.map": "./static/js/2.aef79d59.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.e0d696ab18344d7573ddd3e71e3e26bf.js": "./precache-manifest.e0d696ab18344d7573ddd3e71e3e26bf.js",
+    "precache-manifest.20d591668a39889985c5e59cc135d196.js": "./precache-manifest.20d591668a39889985c5e59cc135d196.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.422a7b93.chunk.css.map": "./static/css/main.422a7b93.chunk.css.map",
+    "static/css/main.f1872355.chunk.css.map": "./static/css/main.f1872355.chunk.css.map",
     "static/media/index.css": "./static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/JadavpurUniversity_Logo.png": "./static/media/JadavpurUniversity_Logo.2cf71e11.png",
     "static/media/JadavpurUniversity_Logo.svg.png": "./static/media/JadavpurUniversity_Logo.svg.2cf71e11.png",
@@ -45,6 +45,7 @@
     "static/media/legato_logo.png": "./static/media/legato_logo.c597fbde.png",
     "static/media/manOnTable.svg": "./static/media/manOnTable.83ac24fb.svg",
     "static/media/muffito_logo.png": "./static/media/muffito_logo.069938a8.png",
+    "static/media/nptel_logo.jpeg": "./static/media/nptel_logo.3f216d1b.jpeg",
     "static/media/nptel_logo.png": "./static/media/nptel_logo.95a12a2b.png",
     "static/media/portfolio.gif": "./static/media/portfolio.414dfbd9.gif",
     "static/media/programmer.svg": "./static/media/programmer.5faf790b.svg",
@@ -59,8 +60,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fff6ee50.js",
-    "static/js/2.f6f068b3.chunk.js",
-    "static/css/main.422a7b93.chunk.css",
-    "static/js/main.c2eff16e.chunk.js"
+    "static/js/2.aef79d59.chunk.js",
+    "static/css/main.f1872355.chunk.css",
+    "static/js/main.5085f7e4.chunk.js"
   ]
 }
