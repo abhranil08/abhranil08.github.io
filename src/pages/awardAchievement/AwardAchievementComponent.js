@@ -6,7 +6,7 @@ import Certifications from "../../containers/certifications/Certifications";
 //import CompetitiveSites from "../../components/competitiveSites/CompetitiveSites";
 import EducationImg from "./EducationImg";
 //import { competitiveSites } from "../../portfolio";
-import { certifications } from "../../portfolio";
+import { certificationsAwards } from "../../portfolio";
 import "./AwardAchievementComponent.css";
 import { Fade } from "react-reveal";
 import AwardAchievements from "../../containers/awardAchivement/AwardAchievements";
@@ -39,7 +39,7 @@ class AwardAchievement extends Component {
             </div>
           </Fade>
           <AwardAchievements theme={this.props.theme} />
-          {certifications.certifications.length > 0 ? (
+          {certificationsAwards.certifications.length > 0 ? (
             <Certifications theme={this.props.theme} />
           ) : null}
         </div>

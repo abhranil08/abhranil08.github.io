@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./AwardAchievements.css";
-import DegreeCard from "../../components/degreeCard/DegreeCard.js";
+//import DegreeCard from "../../components/degreeCard/DegreeCard.js";
+
+import AwardAchievementCard from "../../components/awardAchievementCard/AwardAchievementCard.js";
 import { awardsAndAchivements } from "../../portfolio";
 import { Fade } from "react-reveal";
 
@@ -18,7 +20,7 @@ class AwardAchievement extends Component {
         </div>
         <div className="educations-body-div">
           {awardsAndAchivements.awardsAndAchivements.map((awardsAndAchivements) => {
-            return <DegreeCard degree ={awardsAndAchivements} theme={theme} />;
+            return <AwardAchievementCard degree ={awardsAndAchivements} theme={theme} />;
           })}
         </div>
       </div>
