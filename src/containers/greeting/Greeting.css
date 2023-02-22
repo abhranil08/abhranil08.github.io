@@ -28,6 +28,7 @@
 .button-greeting-div {
   display: flex;
   margin-top: 20px;
+  margin-right: 20px;
 }
 
 .greeting-text {
@@ -67,6 +68,7 @@
 @media (max-width: 768px) {
   .button-greeting-div {
     justify-content: space-around;
+    margin-right: 20px;
   }
   .greeting-text {
     font-size: 30px;
@@ -85,11 +87,5 @@
   }
   .greeting-main {
     display: block;
-  }
-
-  .portfolio-repo-btn-div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
   }
 }
