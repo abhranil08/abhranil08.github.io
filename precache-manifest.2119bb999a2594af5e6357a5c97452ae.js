@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "aa94d8db6fc4eb3382251d6a8be867ad",
+    "revision": "c99e04de9173d4db6ae6c67de996c38c",
     "url": "./index.html"
   },
   {
-    "revision": "cb29f2f5c9fdadeaf4df",
-    "url": "./static/css/main.f1872355.chunk.css"
+    "revision": "242df4bdcc9b7a0533bd",
+    "url": "./static/css/main.34230daa.chunk.css"
   },
   {
-    "revision": "a52f51a0604fbb0aad21",
-    "url": "./static/js/2.aef79d59.chunk.js"
+    "revision": "3ca008d2edf667de0e25",
+    "url": "./static/js/2.3a03a165.chunk.js"
   },
   {
-    "revision": "cb29f2f5c9fdadeaf4df",
-    "url": "./static/js/main.5085f7e4.chunk.js"
+    "revision": "242df4bdcc9b7a0533bd",
+    "url": "./static/js/main.6adf3980.chunk.js"
   },
   {
     "revision": "1a27038c5115d044f6f9",
@@ -58,6 +58,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "ee6539921d713482b8ccd4d0d23961bb",
     "url": "./static/media/Montserrat-Regular.ee653992.ttf"
+  },
+  {
+    "revision": "35a7617e888d43c4091e85d414a4e7bd",
+    "url": "./static/media/abhranilbhattacharjee.35a7617e.png"
   },
   {
     "revision": "4738218cae2dedc9a30feffbb5556b3b",
@@ -214,6 +218,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "29152cf756a1facead5393c32e373371",
     "url": "./static/media/intel_logo.29152cf7.jpg"
+  },
+  {
+    "revision": "8d7c3c06f968649a655d7e08bd0773f7",
+    "url": "./static/media/isi_logo.8d7c3c06.png"
   },
   {
     "revision": "60ed0bd3f8b99ac1d29e74575f804aaa",
