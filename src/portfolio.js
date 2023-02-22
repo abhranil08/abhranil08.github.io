@@ -57,8 +57,8 @@ const skills = {
       title: "Full Stack Development",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building responsive and efficient backend applications using Java and different Data Engineering solutions",
-        "⚡ Creating application backend in Node, Express & Flask",
+        "⚡ Building responsive and efficient backend applications using Java and different Data Engineering solutions.",
+        "⚡ Creating backend application in Node, Express & Flask.",
       ],
       softwareSkills: [
         {
@@ -334,7 +334,7 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "I have worked with many evolving startups as ML and DL Developer, Designer and Software Architect. I have also worked with some well established companies mostly as Software Development Engineer.",
+    "As an SDE 2 at Goldman Sachs, I develop and maintain software systems. With experience as an ML/DL Developer, Designer, and Software Architect, I have collaborated with several startups in the past, and worked with established companies to hone my skills as a Software Development Engineer.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -347,8 +347,9 @@ const experience = {
           logo_path: "goldmansachs_logo.png",
           duration: "June 2020 - Present",
           location: "Bengaluru, IN",
-          description:
+          description: [
             "Currently working in the Risk division, to develop financial systems for monitoring and analyzing risk for the firm.",
+          ],
           color: "#0879bf",
         },
       ],
@@ -363,8 +364,9 @@ const experience = {
           logo_path: "rndTcs_logo.png",
           duration: "May. 2019 - July. 2019",
           location: "Gurgaon, IN",
-          description:
+          description: [
             "Part of the Web Intelligence team : Building new features on the backend recommendation system, specifically ranking algorithms for Ads that touch hundreds of millions of people around the world. Improving online and offline content ranking algorithms by performing hard sample data replays for training steps.",
+          ],
           color: "#000000",
         },
         {
@@ -374,8 +376,9 @@ const experience = {
           logo_path: "crioDo_logo.webp",
           duration: "May. 2019 - June. 2019",
           location: "Remote",
-          description:
+          description: [
             "Java backend for a distributed, highly available, food ordering platform by using RESTful APIs.",
+          ],
           color: "#ee3c26",
         },
         {
@@ -385,10 +388,42 @@ const experience = {
           logo_path: "ibm_logo.png",
           duration: "Jan. 2018 - Feb. 2018",
           location: "Remote",
-          description:
+          description: [
             "Developed Cognitive search-based travel Chatbot whose engine was powered by Watson Assistant in Android Studio and included web scrapping techniques by using JSoup for gathering dynamic data.",
+          ],
           color: "#0071C5",
         },
+      ],
+    },
+    {
+      title: "Research",
+      experiences: [
+        {
+          title: "Computer vision, Deep learning & NLP Researcher.",
+          company: "Jadavpur University",
+          company_url: "https://www.tcs.com/what-we-do/research",
+          logo_path: "JadavpurUniversity_Logo.png",
+          duration: "2017 - 2019",
+          location: "Kolkata, West Bengal, IN.",
+          description: [
+            "Worked with Dr. Nibaran Das on Image Caption Generation, an automatic process of generating textual description from an image - based on the objects and actions in the image.",
+            "Worked with Dr. Sudip Kumar Naskar on Neural Machine Translation. Implemented state-of-the-art Transformer model which outperformed various Machine translation baseline models like RNNs, LSTMs, and Attention models involving two major languages English and German at \textbf{WMT, 2019}.",
+            ],
+          color: "#000000",
+        },
+        {
+          title: "Computer vision, Deep learning Researcher",
+          company: "Indian Statistical Institute ( ISI )",
+          company_url: "https://www.isical.ac.in/",
+          logo_path: "isi_logo.png",
+          duration: "May. 2017 - July. 2017",
+          location: "Kolkata, West Bengal, IN.",
+          description: [
+            "Eye blink detection using Facial Landmarks : Worked with Dr.Umapada Pal on Facial Component Analysis.",
+            "Document Scanner, which scans documents by perspective transform."
+          ],
+          color: "#ee3c26",
+        }
       ],
     },
     {
@@ -400,9 +435,10 @@ const experience = {
           company_url: "http://www.jaduniv.edu.in/",
           logo_path: "JadavpurUniversity_Logo.png",
           duration: "June 2019 - April 2020",
-          location: "Hyderabad, Telangana",
-          description:
+          location: "Kolkata, West Bengal, IN",
+          description: [
           "Only three students were chosen from among all university students.",
+          ],
           color: "#4285F4",
         },
       ],
@@ -414,7 +450,7 @@ const experience = {
 const projectsHeader = {
   title: "Projects",
   description:
-    "My projects makes use of vast variety of latest technology tools. My best experience is to create Data Science projects and deploy them to web applications using cloud infrastructure.",
+    "My projects makes use of vast variety of latest technology tools. I specialize in creating efficient full-stack and backend services for web applications, from concept to deployment.",
   avatar_image_path: "projects_image.svg",
 };
 
@@ -442,7 +478,7 @@ const publications = {
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "abhranilbhattacharjee.jpeg",
+    profile_image_path: "abhranilbhattacharjee.png",
     description:
       "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, and Full Stack Development.",
   },
@@ -458,7 +494,7 @@ const contactPageData = {
     subtitle:
       "Bengaluru, IN",
     avatar_image_path: "address_image.svg",
-    location_map_link: "https://goo.gl/maps/MpMqtRZytFchMkZ76",
+    location_map_link: "https://goo.gl/maps/t8a2R2zeuBBx3adq8",
   },
   phoneSection: {
     title: "",

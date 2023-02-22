@@ -1,11 +1,45 @@
 {
   "data": [
     {
+      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
+      "name": "Social Media",
+      "createdAt": "2023-02-10T08:31:51Z",
+      "url": "https://github.com/abhranil08/SocialMedia-FullStack",
+      "description": "🚀 A Full Stack Social Media - Ongoing.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Java",
+          "iconifyClass": "logos-java"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "NodeJS",
+          "iconifyClass": "logos-nodejs"
+        },
+        {
+          "name": "ReactJS",
+          "iconifyClass": "simple-icons:react"
+        },
+        {
+          "name": "MongoDB",
+          "iconifyClass": "logos-mongodb"
+        },
+        {
+          "name": "MySQL",
+          "iconifyClass": "logos:mysql"
+        }
+      ]
+    },
+    {
       "id": "R_kgDOG_vYHA",
       "name": "LLD-Designs",
-      "createdAt": "2022-03-13T20:41:33Z",
+      "createdAt": "2022-11-13T20:41:33Z",
       "url": "https://github.com/abhranil08/LowLevelDesign",
-      "description": "📦 Deisgn some of LLD solutions for backend challenges",
+      "description": "📦 Design some of LLD solutions for backend challenges.",
       "isFork": false,
       "languages": [
         {
@@ -17,9 +51,9 @@
     {
       "id": "R_kgDOG0_8uQ",
       "name": "PasteBin-clone",
-      "createdAt": "2022-02-11T14:50:20Z",
+      "createdAt": "2023-01-05T14:50:20Z",
       "url": "https://github.com/abhranil08/PasteBin",
-      "description": "🌀 PasteBin clone",
+      "description": "🌀 PasteBin clone.",
       "isFork": false,
       "languages": [
         {
@@ -42,10 +76,10 @@
     },
     {
       "id": "R_kgDOGcPKSQ",
-      "name": "RestAPIS for Simple CRUD Web Application",
-      "createdAt": "2021-11-26T17:56:07Z",
+      "name": "RestAPIS for simple CRUD Web Application",
+      "createdAt": "2023-01-26T17:56:07Z",
       "url": "https://github.com/abhranil08/REST-API-CRUD-App",
-      "description": "REST API's for a simple CRUD Application",
+      "description": "🚀 REST API's for a simple CRUD Application.",
       "isFork": false,
       "languages": [
         {
@@ -61,9 +95,9 @@
     {
       "id": "MDEwOlJlcG9zaXRvcnkzMjcyMjI5Njk=",
       "name": "Leetcode",
-      "createdAt": "2021-01-06T06:36:41Z",
+      "createdAt": "2020-01-06T06:36:41Z",
       "url": "https://github.com/abhranil08/Leetcode",
-      "description": "🚀  Solutions to a number Leetcode solutions",
+      "description": " Solutions to a number Leetcode problems",
       "isFork": false,
       "languages": [
         {
@@ -83,9 +117,9 @@
     {
       "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
       "name": "Diabetic-Retinopathy",
-      "createdAt": "2021-01-01T08:31:51Z",
+      "createdAt": "2020-01-01T08:31:51Z",
       "url": "https://github.com/abhranil08/Diabetic-Retinopathy",
-      "description": "🚀 Automated method of diabetic retinopathy screening",
+      "description": "🚀 Automated method of diabetic retinopathy screening.",
       "isFork": false,
       "languages": [
         {
