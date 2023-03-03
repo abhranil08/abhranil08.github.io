@@ -26,3 +26,10 @@
 - You can check it using `npm start`, it will open the website locally on your browser.
 - Change PORT number in server.js to use your own. Ex : local URL - http://localhost:3000/ , when PORT number : 3000
 
+# Pages and sections 
+- Home
+- Education
+- Experience
+- Projects
+- Achievements
+- Contact
