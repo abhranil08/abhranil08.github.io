@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "852c9c0284459003f1bc797597bc9e22",
+    "revision": "062b2882881df92cdf7312fcadb3119d",
     "url": "./index.html"
   },
   {
-    "revision": "3153ee6c1f3f6fdf2dd3",
+    "revision": "103fceb61869f0791418",
     "url": "./static/css/main.e052e2f1.chunk.css"
   },
   {
-    "revision": "3ca008d2edf667de0e25",
-    "url": "./static/js/2.3a03a165.chunk.js"
+    "revision": "71a55d0e49e68b5055fc",
+    "url": "./static/js/2.86a549e3.chunk.js"
   },
   {
-    "revision": "3153ee6c1f3f6fdf2dd3",
-    "url": "./static/js/main.f9ea7f5f.chunk.js"
+    "revision": "103fceb61869f0791418",
+    "url": "./static/js/main.40bbf46d.chunk.js"
   },
   {
     "revision": "1a27038c5115d044f6f9",
@@ -254,6 +254,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "95a12a2b8c3149cce2175679755c4b4d",
     "url": "./static/media/nptel_logo.95a12a2b.png"
+  },
+  {
+    "revision": "c2ec5c45d3defcc2ed8df5ba500d40f8",
+    "url": "./static/media/paytm_logo.c2ec5c45.jpeg"
   },
   {
     "revision": "414dfbd98516b39255a3e22ed90b3f7d",
