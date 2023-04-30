@@ -23,9 +23,9 @@ const greeting = {
   logo_name: "AbhranilBhattacharjee",
   //nickname: "layman_brother",
   subTitle:
-    "A passionate Full Stack Engineer",
+    "An experienced Full Stack Engineer",
   resumeLink:
-    "https://drive.google.com/file/d/1JXljFzAqi1RH-LKjm3BoSmTVT1RV1FjT/view?usp=sharing",
+    "https://drive.google.com/file/d/1uNfVNunVX2u-rY7_wEeOcRXhHdBGn67u/view?usp=sharing",
   portfolio_repository: "https://github.com/abhranil08",
   githubProfile: "https://github.com/abhranil08",
 };
@@ -334,18 +334,30 @@ const experience = {
   title: "Experience",
   subtitle: "Work, Internship and Volunteership",
   description:
-    "As an SDE 2 at Goldman Sachs, I develop and maintain software systems. With experience as an ML/DL Developer, Designer, and Software Architect, I have collaborated with several startups in the past, and worked with established companies to hone my skills as a Software Development Engineer.",
+    "Being a senior Engineer at Paytm & Goldman Sachs, I develop and maintain software systems. With experience as an Software Engineer, Designer, and ML/DL Developer, I have collaborated with several startups in the past, and worked with established companies to hone my skills as a Software Development Engineer.",
   header_image_path: "experience.svg",
   sections: [
     {
       title: "Work",
       experiences: [
         {
+          title: "Senior Software Engineer",
+          company: "Paytm",
+          company_url: "https://paytm.com/",
+          logo_path: "paytm_logo.jpeg",
+          duration: "April 2023 - Present",
+          location: "Bengaluru, IN",
+          description: [
+            "Currently working within the Devices onboarding team.",
+          ],
+          color: "#0879bf",
+        },
+        {
           title: "SDE II - Associate",
           company: "Goldman Sachs",
           company_url: "https://www.goldmansachs.com",
           logo_path: "goldmansachs_logo.png",
-          duration: "June 2020 - Present",
+          duration: "June 2020 - March 2023",
           location: "Bengaluru, IN",
           description: [
             "Currently working in the Risk division, to develop financial systems for monitoring and analyzing risk for the firm.",

@@ -2,6 +2,36 @@
   "data": [
     {
       "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
+      "name": "Shopping Cart",
+      "createdAt": "2023-04-01T08:31:51Z",
+      "url": "https://github.com/abhranil08/shoppingBackend",
+      "description": "🚀 Backend for a fully working shopping cart - Ongoing.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Java",
+          "iconifyClass": "logos-java"
+        },
+        {
+          "name": "Kafka",
+          "iconifyClass": "logos-kafka"
+        },
+        {
+          "name": "MongoDB",
+          "iconifyClass": "logos-mongodb"
+        },
+        {
+          "name": "MySQL",
+          "iconifyClass": "logos:mysql"
+        },
+        {
+          "name": "ElasticSearch",
+          "iconifyClass":"logos-elasticsearch"
+        }
+      ]
+    },
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
       "name": "Social Media",
       "createdAt": "2023-02-10T08:31:51Z",
       "url": "https://github.com/abhranil08/SocialMedia-FullStack",
@@ -112,24 +142,6 @@
           "name": "JavaScript",
           "iconifyClass": "logos-javascript"
         }      
-      ]
-    },
-    {
-      "id": "MDEwOlJlcG9zaXRvcnkzMjU5NDM1MTE=",
-      "name": "Diabetic-Retinopathy",
-      "createdAt": "2020-01-01T08:31:51Z",
-      "url": "https://github.com/abhranil08/Diabetic-Retinopathy",
-      "description": "🚀 Automated method of diabetic retinopathy screening.",
-      "isFork": false,
-      "languages": [
-        {
-          "name": "Python",
-          "iconifyClass": "logos-python"
-        },
-        {
-          "name": "Keras",
-          "iconifyClass": "simple-icons:keras"
-        }
       ]
     }
   ]
