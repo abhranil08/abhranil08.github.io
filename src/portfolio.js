@@ -119,6 +119,13 @@ const skills = {
           },
         },
         {
+          skillName: "Kafka",
+          fontAwesomeClassname: "logos:kafka",
+          style: {
+            color: "#61DAFB",
+          },
+        },
+        {
           skillName: "Git",
           fontAwesomeClassname: "mdi:git",
           style: {
