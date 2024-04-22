@@ -25,7 +25,7 @@ const greeting = {
   subTitle:
     "An experienced Full Stack Engineer",
   resumeLink:
-    "https://drive.google.com/file/d/1uNfVNunVX2u-rY7_wEeOcRXhHdBGn67u/view?usp=sharing",
+    "https://drive.google.com/file/d/1BdnTrPQwVg7-FAnY-Fxvw-pynsqqDQpq/view?usp=sharing",
   portfolio_repository: "https://github.com/abhranil08",
   githubProfile: "https://github.com/abhranil08",
 };
@@ -499,7 +499,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "abhranilbhattacharjee.png",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, and Full Stack Development.",
+      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with Backend Development, ML, AI, and React.",
   },
   blogSection: {
     //title: "Blogs",
