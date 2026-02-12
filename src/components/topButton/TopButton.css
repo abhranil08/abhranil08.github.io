@@ -9,3 +9,13 @@
   border-radius: 2rem;
   font-size: 1.5rem;
 }
+
+/* Keep scroll-to-top inside viewport when narrow (mobile + resized laptop) */
+@media (max-width: 1024px) {
+  #topButton {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 12px;
+    font-size: 1.25rem;
+  }
+}

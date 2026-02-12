@@ -4,7 +4,6 @@ import Footer from "../../components/footer/Footer";
 import TopButton from "../../components/topButton/TopButton";
 import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
-import BlogsImg from "./BlogsImg";
 import AddressImg from "./AddressImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
@@ -64,21 +63,6 @@ class Contact extends Component {
                 >
                   {blogSection["subtitle"]}
                 </p>
-                {/*<div className="blogsite-btn-div">
-                  <Button
-                    text="Visit My Blogsite"
-                    newTab={true}
-                    href={blogSection.link}
-                    theme={theme}
-                  />
-                </div>8/*/}
-              </div>
-              <div className="blog-heading-img-div">
-                {/* <img
-											src={require(`../../assests/images/${blogSection["avatar_image_path"]}`)}
-											alt=""
-										/> */}
-                <BlogsImg theme={theme} />
               </div>
             </div>
           </Fade>

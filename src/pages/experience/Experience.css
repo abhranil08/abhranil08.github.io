@@ -69,6 +69,14 @@
   font-family: "Google Sans Medium";
 }
 
+/* Prevent overflow when resizing (laptop narrow window) */
+@media (max-width: 1024px) {
+  .experience-main,
+  .basic-experience {
+    overflow-x: hidden;
+  }
+}
+
 @media (max-width: 1380px) {
   .experience-heading-text {
     font-size: 2.1rem;
@@ -99,5 +107,10 @@
   .experience-heading-div {
     grid-template-columns: minmax(0, 1fr);
     padding: 2rem 1.75rem;
+  }
+
+  .experience-main,
+  .basic-experience {
+    overflow-x: hidden;
   }
 }

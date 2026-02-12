@@ -6,9 +6,13 @@ class CertificationCard extends Component {
   render() {
     const certificate = this.props.certificate;
     const theme = this.props.theme;
+    const isDarkLogo =
+      certificate.logo_path &&
+      (certificate.logo_path.includes("deeplearning") ||
+        String(certificate.color_code || "").toLowerCase().startsWith("#000"));
     return (
       <Fade bottom duration={2000} distance="20px">
-        <div className="cert-card">
+        <div className={`cert-card${isDarkLogo ? " cert-card--dark-logo" : ""}`}>
           <div className="content">
             <a
               href={certificate.certificate_link}
@@ -27,9 +31,7 @@ class CertificationCard extends Component {
                 />
               </div>
               <div className="content-details fadeIn-top">
-                <h3 className="content-title" style={{ color: theme.body }}>
-                  Certificate
-                </h3>
+                <h3 className="content-title">Certificate</h3>
               </div>
             </a>
           </div>

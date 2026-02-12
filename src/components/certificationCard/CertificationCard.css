@@ -22,6 +22,11 @@
   height: 100px;
 }
 
+/* Dark-mode: invert black/dark logos (e.g. Deep Learning / Coursera) so they’re visible */
+[data-theme="dark"] .cert-card--dark-logo .logo_img {
+  filter: invert(1);
+}
+
 .cert-body {
   margin: 0px;
 }
@@ -88,8 +93,9 @@
   opacity: 1;
 }
 
-.content-details h3 {
-  color: #fff;
+.content-details h3,
+.content-details .content-title {
+  color: #fff !important;
   font-weight: 500;
   font-family: "Google Sans Regular";
   letter-spacing: 0.15em;

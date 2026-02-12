@@ -84,6 +84,16 @@
 
 .experience-card-body-div {
   width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* Prevent card overflow when resizing (narrow laptop viewport) */
+@media (max-width: 1024px) {
+  .experience-card {
+    min-width: 0;
+    overflow: hidden;
+  }
 }
 
 .experience-card-header-div {
@@ -207,6 +217,8 @@
     margin-bottom: 16px;
     flex-direction: column;
     padding: 1.1rem 1.1rem;
+    min-width: 0;
+    overflow: hidden;
   }
 
   .experience-card-logo-div {
