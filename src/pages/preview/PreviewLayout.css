@@ -1,0 +1,228 @@
+ .preview-page {
+  min-height: 100vh;
+  background-color: inherit;
+}
+
+.preview-main {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.preview-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 2.5fr);
+  gap: 3rem;
+  align-items: center;
+  border-radius: 24px;
+  padding: 3rem;
+  margin-bottom: 3.5rem;
+}
+
+.preview-hero--clean {
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+.preview-hero--dark {
+  background: radial-gradient(circle at top left, #0f172a, #020617);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.9);
+}
+
+.preview-hero--story {
+  background: linear-gradient(135deg, #f1f5f9, #e0f2fe);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.06);
+}
+
+.preview-hero-text-eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #64748b;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.preview-hero-title {
+  font-family: "Google Sans Bold", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  font-size: 2.6rem;
+  line-height: 1.1;
+  margin: 0 0 1rem;
+}
+
+.preview-hero-subtitle {
+  font-family: "Google Sans Medium", system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 1.5rem;
+}
+
+.preview-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.preview-hero-secondary {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.preview-hero-visual {
+  justify-self: center;
+  max-width: 340px;
+  width: 100%;
+}
+
+.preview-section {
+  margin-bottom: 3.5rem;
+}
+
+.preview-section-label {
+  font-size: 0.8rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #64748b;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.preview-section-title {
+  font-size: 1.7rem;
+  font-family: "Google Sans Bold", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  margin: 0 0 0.75rem;
+}
+
+.preview-section-description {
+  font-size: 0.98rem;
+  color: #64748b;
+  max-width: 640px;
+}
+
+.preview-card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.preview-card {
+  border-radius: 18px;
+  padding: 1.5rem 1.4rem;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.06);
+}
+
+.preview-card--dark {
+  background: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.9);
+}
+
+.preview-card-title {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.preview-card-meta {
+  font-size: 0.82rem;
+  color: #64748b;
+  margin-bottom: 0.25rem;
+}
+
+.preview-card-location {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-bottom: 0.75rem;
+}
+
+.preview-card-desc {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.preview-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+}
+
+.preview-chip {
+  border-radius: 999px;
+  padding: 0.18rem 0.7rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  color: #475569;
+  background: rgba(148, 163, 184, 0.08);
+}
+
+.preview-chip--accent {
+  border-color: rgba(34, 211, 238, 0.7);
+  background: rgba(8, 47, 73, 0.7);
+  color: #e0f2fe;
+}
+
+.preview-band {
+  border-radius: 24px;
+  padding: 2.25rem 2.5rem;
+  background: #f8fafc;
+  margin-top: 2rem;
+}
+
+.preview-band-heading {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.preview-band-body {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: #475569;
+}
+
+@media (max-width: 1024px) {
+  .preview-hero {
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    padding: 2.5rem 2rem;
+  }
+
+  .preview-card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .preview-main {
+    padding: 2rem 1.25rem 3rem;
+  }
+
+  .preview-hero {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 1.75rem 1.5rem;
+  }
+
+  .preview-hero-title {
+    font-size: 2rem;
+  }
+
+  .preview-hero-subtitle {
+    font-size: 1rem;
+  }
+
+  .preview-card-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .preview-band {
+    padding: 1.75rem 1.5rem;
+  }
+}
+

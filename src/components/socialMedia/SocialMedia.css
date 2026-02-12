@@ -9,10 +9,13 @@
   margin-bottom: 10px;
 }
 
-.icon-button i {
+.icon-button i,
+.icon-button .icon-button-logo {
   border-radius: 2.6rem;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   font-size: 1.3rem;
   height: 2.6rem;
   line-height: 2.6rem;
@@ -25,6 +28,18 @@
   user-select: none;
   width: 2.6rem;
   margin-bottom: 10px;
+}
+
+.icon-button .icon-button-logo img {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+[data-theme="light"] .icon-button .icon-button-logo img {
+  filter: none;
 }
 
 /* .facebook i {

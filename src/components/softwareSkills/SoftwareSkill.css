@@ -1,17 +1,47 @@
 .dev-icons {
   padding-left: 0;
   list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem 1rem;
+  align-items: center;
 }
 
 .software-skill-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
   font-family: "Google Sans Regular";
+  transition: transform 0.15s ease, opacity 0.2s ease;
+  cursor: default;
+}
+
+.software-skill-inline:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.software-skill-inline .iconify,
+.software-skill-inline .software-skill-logo-img {
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  object-fit: contain;
+}
+
+.software-skill-inline .iconify svg {
+  fill: currentColor;
+}
+
+.software-skill-icon-wrap {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
 }
 
 .software-skill-inline > i {
@@ -20,4 +50,15 @@
 
 .software-skill-inline > i:hover {
   color: #645beb;
+}
+
+.software-skill-tooltip {
+  z-index: 1060;
+}
+
+.software-skill-tooltip .tooltip-inner {
+  white-space: nowrap;
+  pointer-events: none;
+  padding: 0.35rem 0.6rem;
+  font-size: 0.8rem;
 }

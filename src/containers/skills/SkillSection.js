@@ -21,48 +21,53 @@ function GetSkillSvg(props) {
 class SkillSection extends Component {
   render() {
     const theme = this.props.theme;
+    const primarySkills = skills.data.filter((s) => s.primary !== false);
+    const secondarySkills = skills.data.filter((s) => s.primary === false);
     return (
       <div>
-        {skills.data.map((skill) => {
-          return (
-            <div className="skills-main-div">
+        {primarySkills.map((skill) => (
+          <div key={skill.title} className="skills-main-div">
+            <div className="skills-left-col">
               <Fade left duration={2000}>
                 <div className="skills-image-div">
-                  {/* <img
-                    alt="Ashutosh is Analysing Data"
-                    src={require(`../../assests/images/${skill.imagePath}`)}
-                  ></img> */}
                   <GetSkillSvg fileName={skill.fileName} theme={theme} />
                 </div>
               </Fade>
-
-              <div className="skills-text-div">
-                <Fade right duration={1000}>
-                  <h1 className="skills-heading" style={{ color: theme.text }}>
-                    {skill.title}
-                  </h1>
-                </Fade>
-                <Fade right duration={1500}>
-                  <SoftwareSkill logos={skill.softwareSkills} />
-                </Fade>
-                <Fade right duration={2000}>
-                  <div>
-                    {skill.skills.map((skillSentence) => {
-                      return (
-                        <p
-                          className="subTitle skills-text"
-                          style={{ color: theme.secondaryText }}
-                        >
-                          {skillSentence}
-                        </p>
-                      );
-                    })}
-                  </div>
-                </Fade>
-              </div>
+              <Fade left duration={2000}>
+                <div className="skills-desc-block">
+                  {skill.skills.map((skillSentence, i) => (
+                    <p
+                      key={i}
+                      className="subTitle skills-text"
+                      style={{ color: theme.secondaryText }}
+                    >
+                      {skillSentence}
+                    </p>
+                  ))}
+                </div>
+              </Fade>
             </div>
-          );
-        })}
+
+            <div className="skills-text-div">
+              <Fade right duration={1000}>
+                <h1 className="skills-heading" style={{ color: theme.text }}>
+                  {skill.title}
+                </h1>
+              </Fade>
+              <Fade right duration={1500}>
+                <SoftwareSkill logos={skill.softwareSkills} />
+              </Fade>
+            </div>
+          </div>
+        ))}
+
+        {secondarySkills.length > 0 && (
+          <div className="skills-secondary-wrap">
+            <p className="skills-secondary-label" style={{ color: theme.secondaryText }}>
+              Also: Background in {secondarySkills.map((s) => s.title).join(" & ")} (research & internships).
+            </p>
+          </div>
+        )}
       </div>
     );
   }

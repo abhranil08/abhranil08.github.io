@@ -1,31 +1,71 @@
 import React, { Component } from "react";
 import "./ExperienceCard.css";
+import { getImageUrl } from "../../utils/imageLoader";
 
 class ExperienceCard extends Component {
+  state = { logoError: false };
+
+  getLogoSrc(experience) {
+    const hasLocalLogo = experience.logo_path && experience.logo_path.length > 0;
+    if (hasLocalLogo) {
+      return getImageUrl(experience.logo_path);
+    }
+    return null;
+  }
+
+  handleLogoError = () => this.setState({ logoError: true });
+
   render() {
     const experience = this.props.experience;
     const theme = this.props.theme;
+    const companyInitials = experience.company
+      ? experience.company
+          .split(" ")
+          .filter(Boolean)
+          .slice(0, 2)
+          .map((word) => word.charAt(0))
+          .join("")
+      : "";
+    const logoSrc = this.getLogoSrc(experience);
+    const titleParts = experience["title"] && experience["title"].includes(" → ")
+      ? experience["title"].split(" → ")
+      : null;
     return (
       <div
         className="experience-card"
-        style={{ border: `1px solid ${experience["color"]}` }}
+        style={{ borderLeft: `3px solid ${experience["color"]}` }}
       >
         <div className="experience-card-logo-div">
-          <img
-            className="experience-card-logo"
-            src={require(`../../assests/images/${experience["logo_path"]}`)}
-            alt=""
-          />
+          {logoSrc && !this.state.logoError ? (
+            <img
+              className={`experience-card-logo${(experience.logo_path === "myntra_logo.svg" || experience.logo_path === "JadavpurUniversity_Logo.png") ? " experience-card-logo--no-invert" : ""}`}
+              src={logoSrc}
+              alt=""
+              onError={this.handleLogoError}
+            />
+          ) : (
+            <div className="experience-card-logo-fallback">
+              {companyInitials}
+            </div>
+          )}
         </div>
         <div className="experience-card-body-div">
           <div className="experience-card-header-div">
             <div className="experience-card-heading-left">
-              <h3
-                className="experience-card-title"
-                style={{ color: theme.text }}
-              >
-                {experience["title"]}
-              </h3>
+              {titleParts ? (
+                <div className="experience-card-title-progression" style={{ color: theme.text }}>
+                  <span className="experience-card-pill">{titleParts[0].trim()}</span>
+                  <span className="experience-card-pill-arrow" aria-hidden="true">→</span>
+                  <span className="experience-card-pill">{titleParts[1].trim()}</span>
+                </div>
+              ) : (
+                <h3
+                  className="experience-card-title"
+                  style={{ color: theme.text }}
+                >
+                  {experience["title"]}
+                </h3>
+              )}
               <p
                 className="experience-card-company"
                 style={{ color: theme.text }}

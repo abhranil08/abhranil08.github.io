@@ -3,6 +3,20 @@
   line-height: 1.1;
   font-family: "Google Sans Regular";
   text-align: center;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.educations-header-div {
+  margin-bottom: 0.5rem;
+}
+
+.educations-body-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem 2rem;
 }
 
 @media (max-width: 1380px) {

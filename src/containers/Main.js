@@ -8,6 +8,9 @@ import Experience from "../pages/experience/Experience";
 //import Opensource from "../pages/opensource/Opensource";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
+import PreviewClean from "../pages/preview/PreviewClean";
+import PreviewDark from "../pages/preview/PreviewDark";
+import PreviewStory from "../pages/preview/PreviewStory";
 import { settings } from "../portfolio.js";
 import Error404 from "../pages/errors/error404/Error";
 
@@ -64,6 +67,24 @@ export default class Main extends Component {
                 path="/projects"
                 render={(props) => (
                   <Projects {...props} theme={this.props.theme} />
+                )}
+              />
+              <Route
+                path="/preview/clean"
+                render={(props) => (
+                  <PreviewClean {...props} theme={this.props.theme} />
+                )}
+              />
+              <Route
+                path="/preview/dark"
+                render={(props) => (
+                  <PreviewDark {...props} theme={this.props.theme} />
+                )}
+              />
+              <Route
+                path="/preview/story"
+                render={(props) => (
+                  <PreviewStory {...props} theme={this.props.theme} />
                 )}
               />
               <Route
@@ -128,6 +149,24 @@ export default class Main extends Component {
                 path="/projects"
                 render={(props) => (
                   <Projects {...props} theme={this.props.theme} />
+                )}
+              />
+              <Route
+                path="/preview/clean"
+                render={(props) => (
+                  <PreviewClean {...props} theme={this.props.theme} />
+                )}
+              />
+              <Route
+                path="/preview/dark"
+                render={(props) => (
+                  <PreviewDark {...props} theme={this.props.theme} />
+                )}
+              />
+              <Route
+                path="/preview/story"
+                render={(props) => (
+                  <PreviewStory {...props} theme={this.props.theme} />
                 )}
               />
             </Switch>
