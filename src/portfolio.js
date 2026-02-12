@@ -145,26 +145,6 @@ const skills = {
           fontAwesomeClassname: "simple-icons:apache",
           style: { color: "#D22128" },
         },
-        {
-          skillName: "Git",
-          fontAwesomeClassname: "simple-icons:git",
-          style: { color: "#F05032" },
-        },
-        {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
-          style: { color: "#E34F26" },
-        },
-        {
-          skillName: "CSS3",
-          fontAwesomeClassname: "simple-icons:css3",
-          style: { color: "#1572B6" },
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: { color: "#CB3837" },
-        },
       ],
     },
     {
