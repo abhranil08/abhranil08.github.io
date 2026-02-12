@@ -1,6 +1,6 @@
 import React from "react";
 import "./SoftwareSkill.css";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { getImageUrl } from "../../utils/imageLoader";
 
 class SoftwareSkill extends React.Component {
   render() {
@@ -8,33 +8,36 @@ class SoftwareSkill extends React.Component {
       <div>
         <div className="software-skills-main-div">
           <ul className="dev-icons">
-            {/* {skillsSection.softwareSkills.map(skills => {
-            return (
-              <li className="software-skill-inline" name={skills.skillName}>
-                <i className={skills.fontAwesomeClassname}></i>
-              </li>
-            );
-          })} */}
             {this.props.logos.map((logo) => {
+              const color = (logo.style && logo.style.color) || "#64748b";
+              const iconStyle = { ...(logo.style || {}), color, fill: color };
+              const useLogoImage = logo.logoImage && getImageUrl(logo.logoImage);
               return (
-                <OverlayTrigger
+                <li
                   key={logo.skillName}
-                  placement={"top"}
-                  overlay={
-                    <Tooltip id={`tooltip-top`}>
-                      <strong>{logo.skillName}</strong>
-                    </Tooltip>
-                  }
+                  className="software-skill-inline"
+                  title={logo.skillName}
+                  name={logo.skillName}
                 >
-                  <li className="software-skill-inline" name={logo.skillName}>
-                    <span
-                      className="iconify"
-                      data-icon={logo.fontAwesomeClassname}
-                      style={logo.style}
-                      data-inline="false"
-                    ></span>
-                  </li>
-                </OverlayTrigger>
+                  <span className="software-skill-icon-wrap">
+                    {useLogoImage ? (
+                      <img
+                        src={useLogoImage}
+                        alt=""
+                        className="software-skill-logo-img"
+                        aria-hidden="true"
+                      />
+                    ) : (
+                      <span
+                        className="iconify"
+                        data-icon={logo.fontAwesomeClassname}
+                        style={iconStyle}
+                        data-inline="false"
+                        aria-hidden="true"
+                      />
+                    )}
+                  </span>
+                </li>
               );
             })}
           </ul>

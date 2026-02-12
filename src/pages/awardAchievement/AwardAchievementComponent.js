@@ -7,33 +7,31 @@ import { certificationsAwards } from "../../portfolio";
 import "./AwardAchievementComponent.css";
 import { Fade } from "react-reveal";
 import AwardAchievements from "../../containers/awardAchivement/AwardAchievements";
+import AchievementImg from "./AchievementImg";
 
 class AwardAchievement extends Component {
   render() {
-    //const theme = this.props.theme;
+    const theme = this.props.theme;
     return (
       <div className="education-main">
-        <Header theme={this.props.theme} />
+        <Header theme={theme} />
         <div className="basic-education">
           <Fade bottom duration={2000} distance="40px">
-            <div className="heading-div">
-              <div className="heading-img-div">
-                <img
-									src={require("../../assests/images/achievement-award-medal.png")}
-									alt=""
-								/> 
+            <div className="heading-div achievement-heading">
+              <div className="heading-img-div achievement-img-wrap">
+                <AchievementImg theme={theme} />
               </div>
-              <div className="heading-text-div">
-                <AwardAchievements theme={this.props.theme} />
+              <div className="heading-text-div achievement-content-wrap">
+                <AwardAchievements theme={theme} />
                 {certificationsAwards.certifications.length > 0 ? (
-                <Certifications theme={this.props.theme} />
-          ) : null}
+                  <Certifications theme={theme} />
+                ) : null}
               </div>
             </div>
           </Fade>
         </div>
-        <Footer theme={this.props.theme} />
-        <TopButton theme={this.props.theme} />
+        <Footer theme={theme} />
+        <TopButton theme={theme} />
       </div>
     );
   }

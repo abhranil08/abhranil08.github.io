@@ -1,39 +1,42 @@
 import React, { Component } from "react";
 import "./ProjectLanguages.css";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
+import { getImageUrl } from "../../utils/imageLoader";
 
 class ProjectLanguages extends Component {
   render() {
     return (
-      <div>
-        <div className="software-skills-main-div">
-          <ul className="dev-icons-languages">
-            {this.props.logos.map((logo) => {
+      <div className={`project-languages-wrap ${this.props.className || ""}`.trim()}>
+        <ul className="dev-icons-languages">
+          {this.props.logos.map((logo) => {
+            const useLogoImage = logo.logoImage && getImageUrl(logo.logoImage);
+            const needsInvertInDark = logo.name === "MongoDB";
               return (
-                <OverlayTrigger
-                  key={logo.name}
-                  placement={"top"}
-                  overlay={
-                    <Tooltip id={`tooltip-top`}>
-                      <strong>{logo.name}</strong>
-                    </Tooltip>
-                  }
-                >
-                  <li
-                    className="software-skill-inline-languages"
-                    name={logo.skillName}
-                  >
+              <li
+                key={logo.name}
+                className={`software-skill-inline-languages${needsInvertInDark ? " lang-icon--needs-invert" : ""}`}
+                title={logo.name}
+              >
+                <span className="software-skill-lang-icon-wrap">
+                  {useLogoImage ? (
+                    <img
+                      src={useLogoImage}
+                      alt=""
+                      className="software-skill-lang-logo-img"
+                      aria-hidden="true"
+                    />
+                  ) : (
                     <span
                       className="iconify"
                       data-icon={logo.iconifyClass}
                       data-inline="false"
-                    ></span>
-                  </li>
-                </OverlayTrigger>
-              );
-            })}
-          </ul>
-        </div>
+                      aria-hidden="true"
+                    />
+                  )}
+                </span>
+              </li>
+            );
+          })}
+        </ul>
       </div>
     );
   }

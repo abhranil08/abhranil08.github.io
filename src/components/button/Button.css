@@ -1,27 +1,27 @@
 .main-button {
-  background-color: #55198b;
-  border: solid 1px #55198b;
-  color: white;
   font-weight: 500;
   line-height: 1.1;
   width: max-content;
-  padding: 13px 22px;
+  padding: 0.8rem 1.45rem;
   margin-right: 10px;
-  /* text-transform: uppercase; */
-  border-radius: 6px;
+  border-radius: 999px;
   text-align: center;
   text-decoration: none;
-  font-family: "Google Sans Regular";
-  display: block;
-  margin-top: 20px;
-  font-size: 18px;
+  font-family: "Google Sans Medium";
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
   cursor: pointer;
-  letter-spacing: 2px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.9);
+  transition: transform 0.16s ease-out, box-shadow 0.16s ease-out,
+    background-color 0.16s ease-out, color 0.16s ease-out;
 }
 .main-button:hover {
-  /* background-color: #ffffff; */
-  /* color: black; */
-  transition: ease-in 0.3s;
+  transform: translateY(-1px);
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 1);
 }
 .project-button {
   display: flex;
@@ -31,8 +31,8 @@
 /* Media Query */
 @media (max-width: 768px) {
   .main-button {
-    font-size: 15px;
-    padding: 12px 18px;
+    font-size: 0.85rem;
+    padding: 0.75rem 1.3rem;
     margin-right: 0px;
   }
 }

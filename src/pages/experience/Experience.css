@@ -3,12 +3,27 @@
 }
 
 .basic-experience {
-  margin-left: 5%;
-  margin-right: 5%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
 }
 
 .experience-heading-div {
-  display: flex;
+  display: grid;
+  grid-template-columns: minmax(0, 2.5fr) minmax(0, 3fr);
+  gap: 3rem;
+  align-items: center;
+  border-radius: 24px;
+  padding: 2.75rem 2.5rem;
+  background: radial-gradient(circle at top left, #020617, #020617);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.9);
+}
+
+[data-theme="light"] .experience-heading-div {
+  background: linear-gradient(145deg, #ffffff, #f8f5ff);
+  border-color: rgba(124, 86, 194, 0.2);
+  box-shadow: 0 24px 60px rgba(124, 86, 194, 0.08);
 }
 
 .experience-heading-div > * {
@@ -30,24 +45,24 @@
 }
 
 .experience-heading-text {
-  font-size: 56px;
-  font-weight: 400;
+  font-size: 2.4rem;
+  font-weight: 600;
   font-family: "Google Sans Medium";
   line-height: 1.1;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 0;
 }
 
 .experience-heading-sub-text {
-  font-size: 30px;
+  font-size: 1.25rem;
   font-family: "Google Sans Regular";
   text-align: center;
   margin-bottom: 10px;
 }
 
 .experience-header-detail-text {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 1rem;
+  line-height: 1.7;
   margin-top: 0px;
   margin-left: 20px;
   margin-right: 20px;
@@ -56,32 +71,33 @@
 
 @media (max-width: 1380px) {
   .experience-heading-text {
-    font-size: 50px;
-    margin-top: 80px;
+    font-size: 2.1rem;
+    margin-top: 0;
   }
   .experience-heading-sub-text {
-    font-size: 25px;
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 768px) {
   .experience-heading-text {
-    font-size: 30px;
-    margin-top: 20px;
+    font-size: 1.8rem;
+    margin-top: 0;
   }
 
   .experience-heading-sub-text {
-    font-size: 20px;
-  }
-
-  .experience-heading-div {
-    flex-direction: column;
+    font-size: 1rem;
   }
 
   .experience-header-detail-text {
-    font-size: 16px;
+    font-size: 0.95rem;
     margin-right: 0px;
     line-height: normal;
     text-align: center;
+  }
+
+  .experience-heading-div {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 2rem 1.75rem;
   }
 }

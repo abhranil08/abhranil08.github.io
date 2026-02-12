@@ -1,10 +1,17 @@
 /* header */
 
 .header {
-  display: block;
-  max-width: 90%;
-  padding: 20px 10px;
-  margin: 0px auto;
+  max-width: 1120px;
+  margin: 1.5rem auto 0;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 999px;
+  background: rgba(30, 41, 59, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(148, 163, 184, 0.1);
+  backdrop-filter: blur(18px);
 }
 
 .header ul {
@@ -12,7 +19,10 @@
   padding: 0;
   list-style: none;
   overflow: hidden;
-  /* background-color: #fff; */
+}
+
+.header .menu {
+  background: transparent !important;
 }
 .grey-color {
   color: #868e96;
@@ -21,28 +31,92 @@
 .header li a {
   display: block;
   padding: 20px 20px;
-  /* color: black; */
   text-decoration: none;
+  border-radius: 999px;
+  transition: background 0.2s ease;
 }
 
-.header li a:hover,
-.header .menu-btn:hover {
-  /* background-color: #A6E1FA; */
+.header .menu a.nav-link-active {
+  background: var(--nav-active-bg) !important;
+  font-weight: 600;
+}
+
+.header .menu a:hover {
+  background: var(--nav-hover-bg) !important;
+}
+
+.theme-toggle {
+  margin-left: 0.75rem;
+  flex-shrink: 0;
+  padding: 0.4rem 0.6rem;
+  font-size: 1.1rem;
+  line-height: 1;
+  border: 1px solid rgba(148, 163, 184, 0.35);
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.6);
+  color: #e5e7eb;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.15s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(30, 41, 59, 0.9);
+  transform: scale(1.05);
+}
+
+[data-theme="light"] .theme-toggle {
+  background: rgba(255, 255, 255, 0.9);
+  color: #4c2b91;
+  border-color: rgba(124, 86, 194, 0.3);
+}
+
+[data-theme="light"] .theme-toggle:hover {
+  background: rgba(233, 227, 245, 0.95);
 }
 
 .header .logo {
-  display: block;
-  float: left;
-  font-size: 1.5em;
+  display: inline-flex;
+  align-items: center;
   text-decoration: none;
-  margin-top: 10px;
-  line-height: normal;
+  column-gap: 0.75rem;
 }
+
+.logo-mark {
+  width: 34px;
+  height: 34px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #e0f2fe;
+  background: radial-gradient(circle at 0% 0%, #22d3ee, #0ea5e9);
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.5),
+    0 18px 35px rgba(15, 23, 42, 0.8);
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
 .header .logo-name {
-  font-family: "Agustina Regular";
-  font-weight: bold;
-  padding: 0 10px;
-  /* color: #55198b; */
+  font-family: "Google Sans Bold";
+  font-size: 0.95rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #e5e7eb;
+}
+
+.logo-subtitle {
+  font-family: "Google Sans Regular";
+  font-size: 0.7rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #6b7280;
 }
 
 /* menu */
@@ -69,7 +143,7 @@
 }
 
 .header .menu-icon .navicon {
-  background: #333;
+  background: #9ca3af;
   display: block;
   height: 2px;
   position: relative;
@@ -79,7 +153,7 @@
 
 .header .menu-icon .navicon:before,
 .header .menu-icon .navicon:after {
-  background: #333;
+  background: #9ca3af;
   content: "";
   display: block;
   height: 100%;
@@ -129,11 +203,6 @@
   .header li {
     float: left;
   }
-  .header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
   .header .menu {
     max-height: none;
   }
@@ -141,6 +210,27 @@
     display: none;
   }
 }
+[data-theme="light"] .header {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(124, 86, 194, 0.2);
+  box-shadow: 0 18px 45px rgba(124, 86, 194, 0.12);
+}
+
+[data-theme="light"] .header .logo-name,
+[data-theme="light"] .header .logo-subtitle {
+  color: inherit;
+}
+
+[data-theme="light"] .logo-subtitle {
+  color: #7d56c2;
+}
+
+[data-theme="light"] .logo-mark {
+  color: #4c2b91;
+  background: linear-gradient(135deg, #E9E3F5, #d6c8f0);
+  box-shadow: 0 0 0 1px rgba(124, 86, 194, 0.25);
+}
+
 @media (max-width: 960px) and (min-width: 768px) {
   .header {
     font-size: 12px;

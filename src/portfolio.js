@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "AbhranilBhattacharjee",
   //nickname: "layman_brother",
   subTitle:
-    "An experienced Full Stack Engineer",
+    "Senior Software Engineer with 6+ years of experience designing and scaling distributed systems across e‑commerce, fintech and risk platforms.",
   resumeLink:
     "https://drive.google.com/file/d/1BdnTrPQwVg7-FAnY-Fxvw-pynsqqDQpq/view?usp=sharing",
   portfolio_repository: "https://github.com/abhranil08",
@@ -34,20 +34,32 @@ const socialMediaLinks = [
   {
     name: "Github",
     link: "https://github.com/abhranil08",
-    fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
-    backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
+    fontAwesomeIcon: "fa-github",
+    backgroundColor: "#181717",
   },
   {
     name: "LinkedIn",
     link: "https://www.linkedin.com/in/abhranil-bhattacharjee-244280131/",
-    fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
-    backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
+    fontAwesomeIcon: "fa-linkedin-in",
+    backgroundColor: "#0077B5",
+  },
+  {
+    name: "LeetCode",
+    link: "https://leetcode.com/u/abhranil/",
+    logoImage: "leetcode_logo.svg",
+    backgroundColor: "#FFA116",
+  },
+  {
+    name: "Kaggle",
+    link: "https://www.kaggle.com/abhranil08",
+    fontAwesomeIcon: "fa-kaggle",
+    backgroundColor: "#20BEFF",
   },
   {
     name: "Gmail",
     link: "mailto:abhra.tb@gmail.com",
-    fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
-    backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
+    fontAwesomeIcon: "fa-google",
+    backgroundColor: "#D14836",
   },
 ];
 
@@ -56,6 +68,7 @@ const skills = {
     {
       title: "Full Stack Development",
       fileName: "FullStackImg",
+      primary: true,
       skills: [
         "⚡ Building responsive and efficient backend applications using Java and different Data Engineering solutions.",
         "⚡ Creating backend application in Node, Express & Flask.",
@@ -64,104 +77,83 @@ const skills = {
         {
           skillName: "Java",
           fontAwesomeClassname: "simple-icons:java",
-          style: {
-            color: "#E34F26",
-          },
+          logoImage: "java_logo.svg",
+          style: { color: "#ED8B00" },
+        },
+        {
+          skillName: "Spring Boot",
+          fontAwesomeClassname: "simple-icons:springboot",
+          style: { color: "#6DB33F" },
         },
         {
           skillName: "JavaScript",
           fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E",
-          },
+          style: { backgroundColor: "#000000", color: "#F7DF1E" },
         },
         {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
-          style: {
-            color: "#339933",
-          },
+          skillName: "Node.js",
+          fontAwesomeClassname: "logos-nodejs",
+          style: { color: "#339933" },
         },
         {
-          skillName: "ReactJS",
+          skillName: "React",
           fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
+          style: { color: "#61DAFB" },
         },
         {
           skillName: "MySQL",
-          fontAwesomeClassname: "logos:mysql",
-          style: {
-            color: "#61DAFB",
-          },
+          fontAwesomeClassname: "simple-icons:mysql",
+          style: { color: "#4479A1" },
         },
         {
           skillName: "MongoDB",
-          fontAwesomeClassname: "logos:mongodb",
-          style: {
-            color: "#61DAFB",
-          },
+          fontAwesomeClassname: "simple-icons:mongodb",
+          style: { color: "#47A248" },
         },
         {
-          skillName: "Elastic Search",
-          fontAwesomeClassname: "vscode-icons:file-type-elastic",
-          style: {
-            color: "#61DAFB",
-          },
+          skillName: "DynamoDB",
+          fontAwesomeClassname: "simple-icons:amazondynamodb",
+          style: { color: "#4053D6" },
         },
         {
-          skillName: "AWS S3",
-          fontAwesomeClassname: "logos:aws-s3",
-          style: {
-            color: "#61DAFB",
-          },
+          skillName: "Elasticsearch",
+          fontAwesomeClassname: "simple-icons:elasticsearch",
+          style: { color: "#005571" },
+        },
+        {
+          skillName: "AWS",
+          fontAwesomeClassname: "simple-icons:amazonaws",
+          style: { color: "#FF9900" },
+        },
+        {
+          skillName: "S3",
+          fontAwesomeClassname: "simple-icons:amazons3",
+          style: { color: "#569A31" },
+        },
+        {
+          skillName: "Kubernetes",
+          fontAwesomeClassname: "simple-icons:kubernetes",
+          style: { color: "#326CE5" },
         },
         {
           skillName: "Kafka",
-          fontAwesomeClassname: "logos:kafka",
-          style: {
-            color: "#61DAFB",
-          },
+          fontAwesomeClassname: "simple-icons:apachekafka",
+          style: { color: "#94A3B8" },
         },
         {
-          skillName: "Git",
-          fontAwesomeClassname: "mdi:git",
-          style: {
-            color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
-          style: {
-            color: "#E34F26",
-          },
-        },
-        {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          style: {
-            color: "#1572B6",
-          },
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: {
-            color: "#CB3837",
-          },
+          skillName: "Debezium (CDC)",
+          fontAwesomeClassname: "simple-icons:apache",
+          style: { color: "#D22128" },
         },
       ],
     },
     {
       title: "Data Science & AI",
       fileName: "DataScienceImg",
+      primary: false,
       skills: [
-        "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-        "⚡ Experience of working with Computer Vision and NLP projects",
-        "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
+        "⚡ Earlier experience in Machine Learning and Deep Learning through research and internships, mainly in Computer Vision and NLP.",
+        "⚡ Comfortable applying ML and data analysis techniques when they add value to large-scale backend systems.",
       ],
       softwareSkills: [
         {
@@ -251,6 +243,7 @@ const awardsAndAchivements = {
         "⚡ National level cricketer - Part of the West Bengal Under 19 cricket team, 2019.",
         ],
       website_link: "http://www.jaduniv.edu.in/",
+      accentColor: "#C62828",
     },
     {
       title: "Former National Athlete",
@@ -263,6 +256,7 @@ const awardsAndAchivements = {
         "⚡ Named Best Athlete in the West Bengal School Regional Sports Meet twice, 2011 and 2013.",
         ],
       website_link: "http://www.jaduniv.edu.in/",
+      accentColor: "#C62828",
     },
     {
       title: "Academics",
@@ -277,6 +271,7 @@ const awardsAndAchivements = {
         "⚡ Summer research intern at IIM, Lucknow and IIT Kharagpur in Data Analytics and Text Analytics respectively.",
         ],
       website_link: "http://www.jaduniv.edu.in/",
+      accentColor: "#C62828",
     },
   ],
 };
@@ -339,9 +334,9 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Experience",
-  subtitle: "Work, Internship and Volunteership",
+  subtitle: "Work, Research and Volunteering",
   description:
-    "Being a senior Engineer at Paytm & Goldman Sachs, I develop and maintain software systems. With experience as an Software Engineer, Designer, and ML/DL Developer, I have collaborated with several startups in the past, and worked with established companies to hone my skills as a Software Development Engineer.",
+    "Senior Software Engineer with 6+ years of experience building highly scalable, distributed backend systems across e‑commerce, fintech and risk. I have led and contributed to platforms at Myntra, Paytm and Goldman Sachs, and previously worked in ML and data science during internships and academic research.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -349,27 +344,42 @@ const experience = {
       experiences: [
         {
           title: "Senior Software Engineer",
-          company: "Paytm",
-          company_url: "https://paytm.com/",
-          logo_path: "paytm_logo.jpeg",
-          duration: "April 2023 - Present",
+          company: "Myntra",
+          company_url: "https://www.myntra.com",
+          logo_path: "myntra_logo.svg",
+          duration: "June 2024 - Present",
           location: "Bengaluru, IN",
           description: [
-            "Currently working within the Devices onboarding team.",
+            "Scaling and evolving logistics and warehousing platforms powering Myntra's MNOW 30–60 minute delivery service.",
+            "Designing and operating distributed backend services that connect order promise, inventory, fulfillment and last‑mile delivery.",
           ],
-          color: "#0879bf",
+          color: "#F43397",
         },
         {
-          title: "SDE II - Associate",
+          title: "Senior Software Engineer",
+          company: "Paytm",
+          company_url: "https://paytm.com/",
+          logo_path: "paytm_logo.svg",
+          duration: "April 2023 - April 2024",
+          location: "Bengaluru, IN",
+          description: [
+            "Owned services in the Devices onboarding team, enabling large‑scale deployment and management of merchant devices in the Paytm ecosystem.",
+            "Worked on high‑throughput, fault‑tolerant backend systems for payments and merchant experiences.",
+          ],
+          color: "#0ea5e9",
+        },
+        {
+          title: "SDE I - Analyst → SDE II - Associate",
           company: "Goldman Sachs",
           company_url: "https://www.goldmansachs.com",
-          logo_path: "goldmansachs_logo.png",
+          logo_path: "goldmansachs_logo.svg",
           duration: "June 2020 - March 2023",
           location: "Bengaluru, IN",
           description: [
-            "Currently working in the Risk division, to develop financial systems for monitoring and analyzing risk for the firm.",
+            "Progressed from SDE I – Analyst to SDE II – Associate in the Risk division.",
+            "Built and maintained risk monitoring and analytics systems used across the firm for real‑time and batch risk management.",
           ],
-          color: "#0879bf",
+          color: "#001E4D",
         },
       ],
     },
@@ -380,7 +390,7 @@ const experience = {
           title: "R & D Intern, Natural Language Processing, Deep Learning.",
           company: "Research and Innovation Labs, TCS",
           company_url: "https://www.tcs.com/what-we-do/research",
-          logo_path: "rndTcs_logo.png",
+          logo_path: "tcs_logo.svg",
           duration: "May. 2019 - July. 2019",
           location: "Gurgaon, IN",
           description: [
@@ -404,7 +414,7 @@ const experience = {
           title: "Software Engineering Intern",
           company: "IBM",
           company_url: "https://www.ibm.com/in-en",
-          logo_path: "ibm_logo.png",
+          logo_path: "ibm_logo.svg",
           duration: "Jan. 2018 - Feb. 2018",
           location: "Remote",
           description: [
@@ -428,7 +438,7 @@ const experience = {
             "Worked with Dr. Nibaran Das on Image Caption Generation, an automatic process of generating textual description from an image - based on the objects and actions in the image.",
             "Worked with Dr. Sudip Kumar Naskar on Neural Machine Translation. Implemented state-of-the-art Transformer model which outperformed various Machine translation baseline models like RNNs, LSTMs, and Attention models involving two major languages English and German at \textbf{WMT, 2019}.",
             ],
-          color: "#000000",
+          color: "#C62828",
         },
         {
           title: "Computer vision, Deep learning Researcher",
@@ -458,7 +468,7 @@ const experience = {
           description: [
           "Only three students were chosen from among all university students.",
           ],
-          color: "#4285F4",
+          color: "#C62828",
         },
       ],
     },
@@ -499,7 +509,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "abhranilbhattacharjee.png",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with Backend Development, ML, AI, and React.",
+      "I am available on almost every social media. You can message me and I will try to reply within 24 hours. I can help you with backend architecture, distributed systems design and building reliable platforms at scale.",
   },
   blogSection: {
     //title: "Blogs",

@@ -26,21 +26,22 @@ export default function Greeting(props) {
               >
                 {greeting.subTitle}
               </p>
-              <SocialMedia theme={theme} />
-              <div className="button-greeting-div">
-                <Button className = "button-greeting-github"
-                  text="⭐ Star Me On Github" 
-                  href={greeting.githubProfile} 
-                  theme={theme}
-                />
-                    
-                <Button
+              <div className="greeting-actions-row">
+                <SocialMedia theme={theme} />
+                <div className="button-greeting-div">
+                  <Button
+                    className="button-greeting-github"
+                    text="Star on GitHub"
+                    href={greeting.githubProfile}
+                    theme={theme}
+                  />
+                  <Button
                     text="Resume"
                     newTab={true}
                     href={greeting.resumeLink}
                     theme={theme}
-                /> 
-                            
+                  />
+                </div>
               </div>
             </div>
           </div>

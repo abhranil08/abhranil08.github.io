@@ -5,10 +5,15 @@
 .basic-education {
   margin-left: 5%;
   margin-right: 5%;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
 }
 
 .heading-div {
   display: flex;
+  margin-bottom: 2rem;
 }
 
 .heading-div > * {
@@ -22,6 +27,8 @@
 
 .heading-text-div {
   text-align: center;
+  padding: 0 1rem;
+  min-width: 0;
 }
 
 .heading-img-div > * {
@@ -33,15 +40,27 @@
   font-size: 56px;
   font-weight: 400;
   font-family: "Google Sans Medium";
-  line-height: 1.1;
+  line-height: 1.2;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 0.5rem;
 }
 
 .heading-sub-text {
   font-size: 30px;
   font-family: "Google Sans Regular";
   text-align: center;
+  line-height: 1.4;
+  margin: 0.5rem 0 1rem 0;
+  padding: 0 0.25rem;
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+#educations.main {
+  margin-top: 0.5rem;
+  padding-top: 0;
 }
 
 @media (max-width: 1380px) {
@@ -50,21 +69,35 @@
     margin-top: 80px;
   }
   .heading-sub-text {
-    font-size: 25px;
+    font-size: 24px;
+    line-height: 1.45;
+    margin: 0.4rem 0 0.9rem 0;
   }
 }
 
 @media (max-width: 768px) {
+  .heading-text-div {
+    padding: 0 0.5rem;
+  }
   .heading-text {
     font-size: 30px;
     margin-top: 20px;
+    margin-bottom: 0.4rem;
   }
-
   .heading-sub-text {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0.35rem 0 0.75rem 0;
+    padding: 0;
   }
-
   .heading-div {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading-sub-text {
+    font-size: 16px;
+    line-height: 1.5;
   }
 }
