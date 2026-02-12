@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 320" fill="currentColor" aria-hidden="true">
+  <!-- Realistic human silhouette, side view: head, neck, shoulders, arms, torso, legs. Single outline. -->
+  <path d="
+    M 100 28
+    C 90 28 82 36 82 44 C 82 50 86 54 100 54 C 114 50 118 44 118 44 C 118 36 110 28 100 28 Z
+    M 96 52
+    C 90 54 84 60 78 72
+    C 72 85 68 100 68 118
+    C 70 138 72 158 74 182
+    C 74 212 72 242 70 268
+    L 66 288 L 68 292
+    L 132 292 L 130 288
+    L 128 268 C 126 242 124 212 124 182
+    C 124 158 126 138 128 118
+    C 128 100 124 85 118 72
+    C 112 60 106 54 104 52
+    L 96 52 Z
+  "/>
+</svg>

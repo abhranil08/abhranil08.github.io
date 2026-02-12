@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "75c3d371fb847e0d5e6d45a401bc158f",
+    "revision": "f6bfb587ad267b12c03354c3712c37a5",
     "url": "./index.html"
   },
   {
-    "revision": "015c371bbbedc76442ca",
-    "url": "./static/css/main.e052e2f1.chunk.css"
+    "revision": "e6a43b4e815c51ccb7ec",
+    "url": "./static/css/main.e887b604.chunk.css"
   },
   {
-    "revision": "71a55d0e49e68b5055fc",
-    "url": "./static/js/2.86a549e3.chunk.js"
+    "revision": "e8601cb8e3e120acc5d6",
+    "url": "./static/js/2.23591775.chunk.js"
   },
   {
-    "revision": "015c371bbbedc76442ca",
-    "url": "./static/js/main.d623faa5.chunk.js"
+    "revision": "e6a43b4e815c51ccb7ec",
+    "url": "./static/js/main.480bf0b6.chunk.js"
   },
   {
     "revision": "1a27038c5115d044f6f9",
@@ -200,6 +200,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/github_logo.6eeb2e81.png"
   },
   {
+    "revision": "03b83a43a8f3fd579f4895da2b4046e3",
+    "url": "./static/media/goldmansachs_logo.03b83a43.svg"
+  },
+  {
+    "revision": "03b83a43a8f3fd579f4895da2b4046e3",
+    "url": "./static/media/goldmansachs_logo_simple.03b83a43.svg"
+  },
+  {
     "revision": "0c8a4c114ad00f7854e91550379b9b91",
     "url": "./static/media/googleAssistant.0c8a4c11.jpg"
   },
@@ -208,8 +216,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/googleAssistant.a6addc3f.svg"
   },
   {
+    "revision": "c96898ca8ea51d44d4b396e98e1b2c8f",
+    "url": "./static/media/ibm_logo.c96898ca.svg"
+  },
+  {
     "revision": "d3fccbe1db76b96f4f320d9c0f7da30c",
     "url": "./static/media/ibm_logo.d3fccbe1.png"
+  },
+  {
+    "revision": "3be7b8b182ccd96e48989b4e57311193",
+    "url": "./static/media/ibm_logo_new.3be7b8b1.svg"
   },
   {
     "revision": "571a8584e69ecfbe326c8b8385fbbf54",
@@ -232,8 +248,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/jadavpurUniversity.2cf71e11.png"
   },
   {
+    "revision": "459bbae2e96a2410c5b429eb941a4c11",
+    "url": "./static/media/java_logo.459bbae2.svg"
+  },
+  {
     "revision": "5b4a6449747ec61a6d9aa874f2a9ceba",
     "url": "./static/media/jsFramework.5b4a6449.svg"
+  },
+  {
+    "revision": "dcda79494a13cf80fcb743c7414a6727",
+    "url": "./static/media/leetcode_logo.dcda7949.svg"
   },
   {
     "revision": "c597fbded5de799dfb9abc3fc4f1c26f",
@@ -248,6 +272,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/muffito_logo.069938a8.png"
   },
   {
+    "revision": "f9a48a6040518d9d40e64893576e8cc8",
+    "url": "./static/media/myntra_logo.f9a48a60.svg"
+  },
+  {
+    "revision": "f28d0807b1947cefda56b953b08f5db9",
+    "url": "./static/media/nodejs_logo.f28d0807.svg"
+  },
+  {
     "revision": "3f216d1bb69d43c71ef3b7fb69b809d2",
     "url": "./static/media/nptel_logo.3f216d1b.jpeg"
   },
@@ -256,8 +288,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "./static/media/nptel_logo.95a12a2b.png"
   },
   {
+    "revision": "37c82f2d43ab95e36853b6fa3e974070",
+    "url": "./static/media/paytm_logo.37c82f2d.svg"
+  },
+  {
     "revision": "c2ec5c45d3defcc2ed8df5ba500d40f8",
     "url": "./static/media/paytm_logo.c2ec5c45.jpeg"
+  },
+  {
+    "revision": "37c82f2d43ab95e36853b6fa3e974070",
+    "url": "./static/media/paytm_logo_simple.37c82f2d.svg"
+  },
+  {
+    "revision": "64c1c949ba4a7fe01e61575264142768",
+    "url": "./static/media/player_silhouette.64c1c949.svg"
   },
   {
     "revision": "414dfbd98516b39255a3e22ed90b3f7d",
@@ -290,6 +334,18 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3fa5424232370e3d049c9555d9c440a4",
     "url": "./static/media/talksCardBackAlt.3fa54242.svg"
+  },
+  {
+    "revision": "4870f56e39ecd1dedd3cbea9ddcaa841",
+    "url": "./static/media/tata_logo.4870f56e.svg"
+  },
+  {
+    "revision": "29690743f6172a67d6104caa440c4329",
+    "url": "./static/media/tcs_logo.29690743.svg"
+  },
+  {
+    "revision": "29690743f6172a67d6104caa440c4329",
+    "url": "./static/media/tcs_logo_simple.29690743.svg"
   },
   {
     "revision": "0993e3246bf5146154391a0afef79b03",
