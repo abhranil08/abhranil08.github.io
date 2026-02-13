@@ -70,8 +70,8 @@ const skills = {
       fileName: "FullStackImg",
       primary: true,
       skills: [
-        "⚡ Java backends and data pipelines that scale—built to perform, not just run.",
-        "⚡ Node, Express & Flask: the stack I reach for when it’s time to ship fast and ship clean.",
+        "⚡ Java backends and data pipelines that scale, built to perform, not just run.",
+        "⚡ Node & Express for APIs and services that need to ship without the big-framework tax, right tool, less ceremony.",
       ],
       softwareSkills: [
         {
@@ -94,6 +94,11 @@ const skills = {
           skillName: "Node.js",
           fontAwesomeClassname: "logos-nodejs",
           style: { color: "#339933" },
+        },
+        {
+          skillName: "Express",
+          fontAwesomeClassname: "simple-icons:express",
+          style: { color: "#000000" },
         },
         {
           skillName: "React",
