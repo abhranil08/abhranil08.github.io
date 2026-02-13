@@ -38,7 +38,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0 0.5rem;
+  gap: 0.5rem 0.5rem;
   margin-top: 1.25rem;
 }
 
@@ -59,12 +59,13 @@
   margin-left: 0.25rem;
 }
 
+/* Star on GitHub & Resume: slightly smaller than social icons, scale with screen */
 .button-greeting-div .main-button {
-  height: 2.6rem;
-  padding: 0 1rem;
-  font-size: 0.8rem;
-  line-height: 2.6rem;
-  border-radius: 2.6rem;
+  height: 2rem;
+  padding: 0 0.8rem;
+  font-size: 0.72rem;
+  line-height: 2rem;
+  border-radius: 2rem;
   margin-top: 0;
   margin-right: 0;
   letter-spacing: 0.04em;
@@ -101,6 +102,16 @@
   height: auto;
 }
 
+/* Light mode small screens: add gap so boy image (black hair) doesn't overlap purple buttons */
+@media (max-width: 768px) {
+  [data-theme="light"] .greeting-actions-row {
+    margin-bottom: 1.25rem;
+  }
+  [data-theme="light"] .greeting-image-div {
+    margin-top: 0.5rem;
+  }
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
@@ -111,8 +122,22 @@
   }
 }
 @media (max-width: 768px) {
+  .greeting-actions-row {
+    gap: 0.5rem 0.4rem;
+    justify-content: center;
+  }
   .button-greeting-div {
     justify-content: center;
+    flex-wrap: nowrap;
+    gap: 0.4rem;
+    margin-top: 0;
+  }
+  .button-greeting-div .main-button {
+    height: 1.85rem;
+    padding: 0 0.65rem;
+    font-size: 0.68rem;
+    line-height: 1.85rem;
+    border-radius: 1.85rem;
   }
   .greeting-text {
     font-size: 1.9rem;
@@ -132,5 +157,18 @@
   .greeting-main {
     display: block;
     padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .greeting-actions-row {
+    gap: 0.6rem 0.35rem;
+  }
+  .button-greeting-div .main-button {
+    height: 1.65rem;
+    padding: 0 0.55rem;
+    font-size: 0.62rem;
+    line-height: 1.65rem;
+    border-radius: 1.65rem;
   }
 }

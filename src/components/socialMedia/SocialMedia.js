@@ -1,4 +1,5 @@
 import React from "react";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import "./SocialMedia.css";
 import { socialMediaLinks } from "../../portfolio";
 import { getImageUrl } from "../../utils/imageLoader";
@@ -23,34 +24,44 @@ export default function socialMedia(props) {
     <div className="social-media-div">
       {socialMediaLinks.map((media) => {
         const useLogoImage = media.logoImage;
+        const tooltip = (
+          <Tooltip id={`tooltip-${media.name}`} className="social-media-tooltip">
+            {media.name}
+          </Tooltip>
+        );
         return (
-          <a
+          <OverlayTrigger
             key={media.name}
-            href={media.link}
-            className="icon-button"
-            target="_blank"
-            rel="noopener noreferrer"
-            title={media.name}
+            placement="top"
+            overlay={tooltip}
+            delay={{ show: 80, hide: 0 }}
           >
-            <IconWrapper {...media} {...props}>
-              {useLogoImage ? (
-                <span
-                  className="social-logo-img icon-button-logo"
-                  style={{ backgroundColor: media.backgroundColor }}
-                  aria-hidden
-                >
-                  <img
-                    src={getImageUrl(media.logoImage) || ""}
-                    alt=""
-                    width="20"
-                    height="20"
-                  />
-                </span>
-              ) : (
-                <i className={media.fontAwesomeIcon.includes(" ") ? media.fontAwesomeIcon : `fab ${media.fontAwesomeIcon}`}></i>
-              )}
-            </IconWrapper>
-          </a>
+            <a
+              href={media.link}
+              className="icon-button"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <IconWrapper {...media} {...props}>
+                {useLogoImage ? (
+                  <span
+                    className="social-logo-img icon-button-logo"
+                    style={{ backgroundColor: media.backgroundColor }}
+                    aria-hidden
+                  >
+                    <img
+                      src={getImageUrl(media.logoImage) || ""}
+                      alt=""
+                      width="20"
+                      height="20"
+                    />
+                  </span>
+                ) : (
+                  <i className={media.fontAwesomeIcon.includes(" ") ? media.fontAwesomeIcon : `fab ${media.fontAwesomeIcon}`}></i>
+                )}
+              </IconWrapper>
+            </a>
+          </OverlayTrigger>
         );
       })}
     </div>

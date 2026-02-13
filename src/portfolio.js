@@ -23,7 +23,7 @@ const greeting = {
   logo_name: "AbhranilBhattacharjee",
   //nickname: "layman_brother",
   subTitle:
-    "Senior Software Engineer with 6+ years of experience designing and scaling distributed systems across e‑commerce, fintech and risk platforms.",
+    "Senior Software Engineer · 6+ years designing and scaling distributed systems across e‑commerce, fintech and risk—where uptime isn’t optional.",
   resumeLink:
     "https://drive.google.com/file/d/1BdnTrPQwVg7-FAnY-Fxvw-pynsqqDQpq/view?usp=sharing",
   portfolio_repository: "https://github.com/abhranil08",
@@ -70,8 +70,8 @@ const skills = {
       fileName: "FullStackImg",
       primary: true,
       skills: [
-        "⚡ Building responsive and efficient backend applications using Java and different Data Engineering solutions.",
-        "⚡ Creating backend application in Node, Express & Flask.",
+        "⚡ Java backends and data pipelines that scale—built to perform, not just run.",
+        "⚡ Node, Express & Flask: the stack I reach for when it’s time to ship fast and ship clean.",
       ],
       softwareSkills: [
         {
@@ -222,8 +222,8 @@ const degrees = {
       //alt_name: "IIITDM Kurnool",
       duration: "2016 - 2020",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science and Full Stack Development.",
+        "⚡ Core coursework in Data Structures, Algorithms, DBMS, Operating Systems, Computer Architecture and Artificial Intelligence.",
+        "⚡ Additional coursework in Deep Learning, Data Science and Full Stack Development.",
         ],
       website_link: "http://www.jaduniv.edu.in/",
     },
@@ -369,14 +369,14 @@ const experience = {
           color: "#0ea5e9",
         },
         {
-          title: "SDE I - Analyst → SDE II - Associate",
+          title: "SDE I – Analyst → SDE II – Associate",
           company: "Goldman Sachs",
           company_url: "https://www.goldmansachs.com",
           logo_path: "goldmansachs_logo.svg",
           duration: "June 2020 - March 2023",
           location: "Bengaluru, IN",
           description: [
-            "Progressed from SDE I – Analyst to SDE II – Associate in the Risk division.",
+            "Part of the risk engineering team.",
             "Built and maintained risk monitoring and analytics systems used across the firm for real‑time and batch risk management.",
           ],
           color: "#001E4D",
@@ -394,7 +394,8 @@ const experience = {
           duration: "May. 2019 - July. 2019",
           location: "Gurgaon, IN",
           description: [
-            "Part of the Web Intelligence team : Building new features on the backend recommendation system, specifically ranking algorithms for Ads that touch hundreds of millions of people around the world. Improving online and offline content ranking algorithms by performing hard sample data replays for training steps.",
+            "Part of the Web Intelligence team. Built new features for the backend recommendation system, including ad ranking algorithms that reached hundreds of millions of users globally.",
+            "Improved online and offline content ranking by running hard sample data replays in the training pipeline.",
           ],
           color: "#000000",
         },
@@ -406,7 +407,7 @@ const experience = {
           duration: "May. 2019 - June. 2019",
           location: "Remote",
           description: [
-            "Java backend for a distributed, highly available, food ordering platform by using RESTful APIs.",
+            "Developed a distributed, highly available Java backend for a food-ordering platform using RESTful APIs.",
           ],
           color: "#ee3c26",
         },

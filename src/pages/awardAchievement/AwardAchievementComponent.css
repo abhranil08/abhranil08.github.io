@@ -3,8 +3,9 @@
 }
 
 .basic-education {
-  margin-left: 5%;
-  margin-right: 5%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
 }
 
 .heading-div {

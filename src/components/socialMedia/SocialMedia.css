@@ -30,6 +30,38 @@
   margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+  .icon-button i,
+  .icon-button .icon-button-logo {
+    height: 2.25rem;
+    width: 2.25rem;
+    line-height: 2.25rem;
+    font-size: 1.15rem;
+    border-radius: 2.25rem;
+    margin: 0 4px;
+  }
+  .icon-button .icon-button-logo img {
+    width: 1rem;
+    height: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .icon-button i,
+  .icon-button .icon-button-logo {
+    height: 2rem;
+    width: 2rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    margin: 0 3px;
+  }
+  .icon-button .icon-button-logo img {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+}
+
 .icon-button .icon-button-logo img {
   display: block;
   width: 1.1rem;
@@ -85,6 +117,40 @@
   background-color: black;
   transition: 0.3s ease-in;
 } */
+
+/* Solid box tooltip – same as Skills section (fast, clean) */
+.social-media-tooltip {
+  z-index: 1060;
+}
+
+.social-media-tooltip .tooltip-inner {
+  white-space: nowrap;
+  pointer-events: none;
+  padding: 0.4rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.social-media-tooltip .arrow::before,
+.social-media-tooltip .tooltip-arrow::before {
+  border-top-color: #333;
+}
+
+[data-theme="dark"] .social-media-tooltip .tooltip-inner {
+  background-color: #e4e4e4;
+  color: #1a1a1a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .social-media-tooltip .arrow::before,
+[data-theme="dark"] .social-media-tooltip .tooltip-arrow::before {
+  border-top-color: #e4e4e4;
+}
 
 /* Media Query */
 @media (max-width: 768px) {

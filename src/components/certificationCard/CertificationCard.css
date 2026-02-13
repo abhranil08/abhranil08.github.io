@@ -103,6 +103,14 @@
   text-transform: uppercase;
 }
 
+/* Dark mode: readable hover text (CERTIFICATE) over dark/inverted logo */
+[data-theme="dark"] .cert-card .content:hover .content-overlay {
+  background: rgba(0, 0, 0, 0.88);
+}
+[data-theme="dark"] .cert-card .content-details .content-title {
+  text-shadow: 0 0 3px rgba(0, 0, 0, 1), 0 1px 4px rgba(0, 0, 0, 0.95);
+}
+
 .fadeIn-top {
   top: 20%;
 }
