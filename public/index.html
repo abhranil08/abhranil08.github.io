@@ -80,6 +80,18 @@
     <title>Abhranil's Portfolio</title>
   </head>
   <body>
+    <script>
+      (function() {
+        function stripHash() {
+          if (location.pathname === "/" && (location.hash === "#/" || location.hash === "#")) {
+            history.replaceState(null, "", "/");
+          }
+        }
+        stripHash();
+        var n = 0;
+        var t = setInterval(function() { stripHash(); if (++n >= 20) clearInterval(t); }, 100);
+      })();
+    </script>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
