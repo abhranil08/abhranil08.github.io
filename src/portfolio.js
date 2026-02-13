@@ -98,7 +98,7 @@ const skills = {
         {
           skillName: "Express",
           fontAwesomeClassname: "simple-icons:express",
-          style: { color: "#000000" },
+          style: { color: "#94a3b8" },
         },
         {
           skillName: "React",
