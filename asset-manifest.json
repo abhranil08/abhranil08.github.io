@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "./static/css/main.6deb87f4.chunk.css",
-    "main.js": "./static/js/main.4fbe14a5.chunk.js",
-    "main.js.map": "./static/js/main.4fbe14a5.chunk.js.map",
+    "main.css": "./static/css/main.82e29c46.chunk.css",
+    "main.js": "./static/js/main.047652e3.chunk.js",
+    "main.js.map": "./static/js/main.047652e3.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.fff6ee50.js",
     "runtime-main.js.map": "./static/js/runtime-main.fff6ee50.js.map",
     "static/js/2.00b9f6b8.chunk.js": "./static/js/2.00b9f6b8.chunk.js",
     "static/js/2.00b9f6b8.chunk.js.map": "./static/js/2.00b9f6b8.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.8309ab510457796e52c85d7759336ce1.js": "./precache-manifest.8309ab510457796e52c85d7759336ce1.js",
+    "precache-manifest.274eb85c8b1c921596aa5b9d2084af01.js": "./precache-manifest.274eb85c8b1c921596aa5b9d2084af01.js",
     "service-worker.js": "./service-worker.js",
-    "static/css/main.6deb87f4.chunk.css.map": "./static/css/main.6deb87f4.chunk.css.map",
+    "static/css/main.82e29c46.chunk.css.map": "./static/css/main.82e29c46.chunk.css.map",
     "static/media/index.css": "./static/media/Montserrat-Regular.ee653992.ttf",
     "static/media/JadavpurUniversity_Logo.png": "./static/media/JadavpurUniversity_Logo.2cf71e11.png",
     "static/media/JadavpurUniversity_Logo.svg.png": "./static/media/JadavpurUniversity_Logo.svg.2cf71e11.png",
@@ -78,7 +78,7 @@
   "entrypoints": [
     "static/js/runtime-main.fff6ee50.js",
     "static/js/2.00b9f6b8.chunk.js",
-    "static/css/main.6deb87f4.chunk.css",
-    "static/js/main.4fbe14a5.chunk.js"
+    "static/css/main.82e29c46.chunk.css",
+    "static/js/main.047652e3.chunk.js"
   ]
 }
