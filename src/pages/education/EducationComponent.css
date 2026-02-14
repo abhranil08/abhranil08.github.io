@@ -72,6 +72,21 @@
   }
 }
 
+/* Small screens: same horizontal padding as Experience (no gap from screen edge) */
+@media (max-width: 768px) {
+  .basic-education {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .basic-education {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .heading-text-div {
     padding: 0 0.5rem;

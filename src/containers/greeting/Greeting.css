@@ -102,6 +102,21 @@
   height: auto;
 }
 
+/* Small screens: same horizontal padding as Experience (no gap from screen edge) */
+@media (max-width: 768px) {
+  .greet-main {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .greet-main {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
 /* Light mode small screens: add gap so boy image (black hair) doesn't overlap purple buttons */
 @media (max-width: 768px) {
   [data-theme="light"] .greeting-actions-row {

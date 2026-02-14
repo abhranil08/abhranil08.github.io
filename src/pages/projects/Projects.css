@@ -1,29 +1,20 @@
-/* Match Experience tab: one padded wrapper for all content */
+/* Exact same structure as Experience: projects-main > Header + basic-projects (no wrapper) */
 .projects-main {
   width: 100%;
+  max-width: 100vw;
   text-align: center;
-}
-
-.basic-projects {
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 3rem 1.5rem 4rem;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
-/* Small screens: same spacing as header – no overlap with screen edge */
-@media (max-width: 63.9375em) {
+/* On Projects page only: force header to have same side gap as Experience (Header.css uses 63.9375em) */
+@media (max-width: 1024px) {
   .projects-main .header {
     margin-left: 0.75rem;
     margin-right: 0.75rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
     box-sizing: border-box;
-  }
-
-  .basic-projects {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
   }
 }
 
@@ -34,10 +25,36 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+}
 
+/* Same as .basic-experience on Experience page */
+.basic-projects {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+/* Small screens: same as Experience (basic-experience) */
+@media (max-width: 768px) {
+  .basic-projects {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
   .basic-projects {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
+  }
+}
+
+/* Very narrow: let project cards shrink so they never force horizontal overflow */
+@media (max-width: 400px) {
+  .projects-main .repo-cards-div-main .repo-card-div {
+    min-width: 0;
   }
 }
 
@@ -130,8 +147,12 @@
   .basic-projects {
     overflow-x: hidden;
   }
+  .basic-projects,
+  .projects-heading-div,
   .repo-cards-div-main {
     min-width: 0;
+  }
+  .repo-cards-div-main {
     overflow-x: hidden;
   }
 }

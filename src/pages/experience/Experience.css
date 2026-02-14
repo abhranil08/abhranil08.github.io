@@ -69,6 +69,21 @@
   font-family: "Google Sans Medium";
 }
 
+/* Small screens: tighter horizontal padding so boxes don’t sit with a gap from the edge (reference for all pages) */
+@media (max-width: 768px) {
+  .basic-experience {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .basic-experience {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+}
+
 /* Prevent overflow when resizing (laptop narrow window) */
 @media (max-width: 1024px) {
   .experience-main,
