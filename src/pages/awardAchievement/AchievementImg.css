@@ -1,0 +1,82 @@
+/* Wrapper: position relative, inline-block */
+.achievement-trophy-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+/* Inner: 120x120, relative, inline-flex */
+.achievement-trophy-inner {
+  width: 120px;
+  height: 120px;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Glow via ::before */
+.achievement-trophy-wrap::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(
+    circle,
+    rgba(0, 122, 255, 0.12) 0%,
+    transparent 70%
+  );
+  border-radius: 50%;
+  animation: gentlePulse 4s ease-in-out infinite;
+  pointer-events: none;
+}
+
+/* Trophy emoji */
+.achievement-trophy-emoji {
+  font-size: 80px;
+  line-height: 1;
+  z-index: 1;
+  position: relative;
+}
+
+@keyframes gentlePulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+/* Bigger trophy on medium screens */
+@media (min-width: 768px) {
+  .achievement-trophy-inner {
+    width: 160px;
+    height: 160px;
+  }
+  .achievement-trophy-emoji {
+    font-size: 106px;
+  }
+  .achievement-trophy-wrap::before {
+    width: 186px;
+    height: 186px;
+  }
+}
+
+/* Even bigger on large screens */
+@media (min-width: 1024px) {
+  .achievement-trophy-inner {
+    width: 200px;
+    height: 200px;
+  }
+  .achievement-trophy-emoji {
+    font-size: 133px;
+  }
+  .achievement-trophy-wrap::before {
+    width: 233px;
+    height: 233px;
+  }
+}
