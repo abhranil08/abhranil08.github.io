@@ -1,7 +1,7 @@
 /**
- * FIX BOX TRANSPARENCY – All content boxes/cards match Home page glass.
- * Dark: rgba(255,255,255,0.05) + border 0.1 | Light: rgba(255,255,255,0.1) + border 0.2
- * backdrop-filter blur(20px) everywhere. No opaque backgrounds.
+ * FIX BOX TRANSPARENCY – Matte glass boxes.
+ * Dark: rgba(255,255,255,0.05) + border 0.1 | Light: 0.15 + border 0.25 (matte).
+ * backdrop-filter blur(20px), border-radius 24px. No opaque backgrounds.
  */
 
 /* ========== SHARED GLASS (dark theme default) ========== */
@@ -70,7 +70,7 @@
   box-shadow: none !important;
 }
 
-/* ========== LIGHT THEME – slightly more visible ========== */
+/* ========== LIGHT THEME – matte boxes (tiny opacity increase) ========== */
 [data-theme="light"] .greeting-main,
 [data-theme="light"] .education-main .heading-div,
 [data-theme="light"] .education-main .degree-card-inner,
@@ -85,8 +85,8 @@ body[data-theme="light"] .experience-heading-div,
 [data-theme="light"] .degree-card-inner,
 [data-theme="light"] .achievements-main .degree-card-inner,
 [data-theme="light"] .achievements-main .card-img {
-  background: rgba(255, 255, 255, 0.1) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
 }
 
 [data-theme="light"] .experience-card,
@@ -94,19 +94,19 @@ body[data-theme="light"] .repo-card-div,
 [data-theme="light"] .publication-card-div,
 [data-theme="light"] .cert-card,
 [data-theme="light"] .experience-card-logo-div {
-  background: rgba(255, 255, 255, 0.1) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
 }
 
 [data-theme="light"] .skills-desc-glass,
 body[data-theme="light"] #skills .skills-desc-glass {
-  background: rgba(255, 255, 255, 0.1) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
 }
 
 body[data-theme="light"] .skills-secondary-wrap .skills-desc-glass.skills-also-glass::before {
-  background: rgba(255, 255, 255, 0.1) !important;
-  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
 }
 
 /* Cert card: keep smaller radius as before */

@@ -48,11 +48,17 @@ class DegreeCard extends Component {
                 )}
               </div>
               <div className="body-content">
-                {degree.descriptions.map((sentence, i) => (
-                  <p key={i} className="content-list" style={{ color: theme.text }}>
-                    {sentence}
-                  </p>
-                ))}
+                {degree.descriptions.map((sentence, i) => {
+                  const trimmed = String(sentence).trim();
+                  const hasLightning = trimmed.startsWith("⚡");
+                  const content = hasLightning ? trimmed.slice(1).trim() : trimmed;
+                  return (
+                    <p key={i} className="content-list" style={{ color: theme.text }}>
+                      {hasLightning && <span className="lightning-icon" aria-hidden="true">⚡ </span>}
+                      {content}
+                    </p>
+                  );
+                })}
                 {degree.website_link && (
                   <a
                     href={degree.website_link}

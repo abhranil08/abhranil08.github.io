@@ -4,22 +4,22 @@
   display: inline-block;
 }
 
-/* Inner: 120x120, relative, inline-flex */
+/* Inner: responsive with clamp, 180px on desktop */
 .achievement-trophy-inner {
-  width: 120px;
-  height: 120px;
+  width: clamp(120px, 15vw, 180px);
+  height: clamp(120px, 15vw, 180px);
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Glow via ::before – blue aura, no container */
+/* Glow via ::before – responsive size */
 .achievement-trophy-wrap::before {
   content: "";
   position: absolute;
-  width: 140px;
-  height: 140px;
+  width: clamp(140px, 18vw, 200px);
+  height: clamp(140px, 18vw, 200px);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -33,9 +33,9 @@
   pointer-events: none;
 }
 
-/* Trophy icon: 80px, z-index above glow */
+/* Trophy icon: responsive with clamp, bigger on desktop */
 .achievement-trophy-icon {
-  font-size: 80px;
+  font-size: clamp(80px, 12vw, 120px);
   line-height: 1;
   z-index: 1;
   position: relative;

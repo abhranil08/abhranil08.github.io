@@ -34,10 +34,6 @@
   font-family: "Google Sans Medium" !important;
   font-weight: 500 !important;
 }
-body[data-theme="light"] #skills .skills-desc-line {
-  color: #2b1958 !important;
-}
-
 .skills-left-col {
   grid-column: 1;
   grid-row: 1;

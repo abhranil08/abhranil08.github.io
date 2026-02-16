@@ -1,0 +1,107 @@
+/* Trophy - Part 7 Ultra Subtle, no shine */
+
+.trophy-wrapper {
+  text-align: center;
+}
+
+.trophy-container {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(120px, 15vw, 180px);
+  height: clamp(120px, 15vw, 180px);
+  margin-bottom: 16px;
+}
+
+.trophy-container::before {
+  content: "";
+  position: absolute;
+  width: clamp(130px, 17vw, 200px);
+  height: clamp(130px, 17vw, 200px);
+  background: radial-gradient(
+    circle,
+    rgba(0, 122, 255, 0.04) 0%,
+    transparent 60%
+  );
+  border-radius: 50%;
+  animation: barelyPulse 5s ease-in-out infinite;
+}
+
+@keyframes barelyPulse {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 0.5;
+  }
+}
+
+.trophy-icon {
+  z-index: 1;
+  width: clamp(64px, 8vw, 120px);
+  height: clamp(64px, 8vw, 120px);
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.06));
+}
+
+.trophy-label {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.trophy-count {
+  display: block;
+  font-size: clamp(32px, 5vw, 56px);
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -1px;
+}
+
+.trophies-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-md) 0;
+}
+
+.section-achievements {
+  padding-top: var(--spacing-lg);
+  padding-bottom: var(--spacing-xl);
+}
+
+@media (min-width: 1024px) {
+  .trophy-container {
+    width: 180px;
+    height: 180px;
+  }
+
+  .trophy-icon {
+    width: 120px;
+    height: 120px;
+  }
+
+  .trophy-count {
+    font-size: 56px;
+  }
+}
+
+@media (max-width: 768px) {
+  .trophy-container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .trophy-icon {
+    width: 64px;
+    height: 64px;
+  }
+
+  .trophies-row {
+    gap: var(--spacing-md);
+  }
+}

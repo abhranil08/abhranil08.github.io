@@ -1,0 +1,184 @@
+/**
+ * FINAL FIXES: Home skill text, Experience cards (no badges), Achievements page.
+ */
+
+/* ========== 1. HOME PAGE – Java/Node: white frosted glass box (not purple), white text ========== */
+#skills .skills-left-col .skills-desc-glass {
+  background: rgba(255, 255, 255, 0.18) !important;
+  backdrop-filter: blur(24px) !important;
+  -webkit-backdrop-filter: blur(24px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  border-radius: 24px !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12) !important;
+}
+
+/* Skill bullets: white text */
+.skill-description,
+.skill-item,
+.skill-description li {
+  color: #e8eaed !important;
+  font-weight: 400 !important;
+  font-size: clamp(16px, 3.5vw, 18px) !important;
+}
+
+#skills .skills-desc-line,
+#skills .skills-text,
+.skills-desc-line,
+.skills-text {
+  color: #ffffff !important;
+  font-weight: 400 !important;
+  font-size: clamp(16px, 3.5vw, 18px) !important;
+}
+
+.skill-icon-lightning,
+.lightning-icon {
+  color: #fbbf24 !important;
+}
+
+/* ========== 2. EXPERIENCE CARDS – glass card; title = one line, simple (e.g. Senior Software Engineer (SDE I → SDE II)) ========== */
+.experience-card-title {
+  color: #e8eaed !important;
+  font-weight: 600 !important;
+}
+
+body[data-theme="light"] .experience-card-title {
+  color: #e8eaed !important;
+}
+
+/* Remove any leftover pill styling (job title is now plain text) */
+.experience-card-pill,
+.job-badge,
+.role-badge {
+  background: transparent !important;
+  border: none !important;
+  color: inherit !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* ========== 3. ACHIEVEMENTS PAGE ========== */
+/* A. Remove white outer container */
+.achievements-outer-container,
+.achievements-main.achievements-outer-container {
+  background: transparent !important;
+  padding: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.achievements-main .basic-education {
+  padding: 2rem 0.75rem 3rem !important;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* B. Achievement / Extracurriculars cards – more opaque, ALL text dark and readable */
+.achievements-main .degree-card-inner {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border: 1px solid rgba(0, 0, 0, 0.08) !important;
+  border-radius: 20px !important;
+}
+
+.achievements-main .degree-card-inner .content-list,
+.achievements-main .degree-card-inner .card-body p,
+.achievements-main .degree-card-inner .body-content p,
+.achievements-main .degree-card-inner p,
+.achievements-main .degree-card-inner .card-subtitle,
+.achievements-main .degree-card-inner .duration {
+  color: #1e293b !important;
+}
+
+.achievements-main .degree-card-inner .card-title,
+.achievements-main .degree-card-inner h3 {
+  color: #0f172a !important;
+  font-weight: 600 !important;
+}
+
+.achievements-main .degree-card-inner .lightning-icon {
+  color: #f59e0b !important;
+}
+
+body[data-theme="dark"] .achievements-main .degree-card-inner {
+  background: rgba(30, 41, 59, 0.85) !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
+}
+
+body[data-theme="dark"] .achievements-main .degree-card-inner .card-title,
+body[data-theme="dark"] .achievements-main .degree-card-inner h3 {
+  color: #f1f5f9 !important;
+}
+
+body[data-theme="dark"] .achievements-main .degree-card-inner .content-list,
+body[data-theme="dark"] .achievements-main .degree-card-inner .card-body p,
+body[data-theme="dark"] .achievements-main .degree-card-inner p,
+body[data-theme="dark"] .achievements-main .degree-card-inner .card-subtitle,
+body[data-theme="dark"] .achievements-main .degree-card-inner .duration {
+  color: #cbd5e1 !important;
+}
+
+body[data-theme="dark"] .achievements-main .degree-card-inner .lightning-icon {
+  color: #f59e0b !important;
+}
+
+/* D. Layout – 1 column, gap 24px, left-aligned, less padding */
+.achievements-main .educations-body-div,
+.achievements-main #educations .educations-body-div {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: stretch !important;
+  gap: 24px !important;
+  padding: 0 0 1.5rem !important;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.achievements-main .educations-header-div,
+.achievements-main .educations-header {
+  text-align: left !important;
+}
+
+.achievements-main .achievement-heading .heading-text-div {
+  text-align: left !important;
+}
+
+.achievements-main .heading-div.achievement-heading {
+  padding: 0;
+  gap: 1.5rem;
+}
+
+/* D. Section headings: Extracurriculars, Certifications – dark, large */
+.achievements-main .educations-header,
+.achievements-main .certs-header {
+  color: #1e293b !important;
+  font-size: clamp(32px, 6vw, 44px) !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+  margin-bottom: 1rem !important;
+}
+
+body[data-theme="dark"] .achievements-main .educations-header,
+body[data-theme="dark"] .achievements-main .certs-header {
+  color: #f1f5f9 !important;
+}
+
+/* Achievement content cards: p descriptions #334155 */
+.achievements-main .degree-card-inner .content-list,
+.achievements-main .degree-card-inner .card-body p {
+  color: #334155 !important;
+}
+
+body[data-theme="dark"] .achievements-main .degree-card-inner .content-list,
+body[data-theme="dark"] .achievements-main .degree-card-inner .card-body p {
+  color: #cbd5e1 !important;
+}
+
+/* ========== PROJECTS PAGE – Hero icon 200px, glass ========== */
+.projects-heading-img-div > *,
+.projects-heading-img-div svg {
+  max-width: 200px !important;
+  max-height: 200px !important;
+  width: auto !important;
+  height: auto !important;
+}
+

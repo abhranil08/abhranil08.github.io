@@ -3,6 +3,8 @@
 @import "./styles/ios-enhancements.css";
 @import "./styles/screenshot-fixes.css";
 @import "./styles/box-transparency.css";
+@import "./styles/light-mode-typography.css";
+@import "./styles/final-fixes.css";
 
 @font-face {
   font-family: "Agustina Regular";
