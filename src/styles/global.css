@@ -1,0 +1,121 @@
+/* Part 1: Reset & Base + Part 8: Mobile + Part 9: Performance */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI",
+    Roboto, sans-serif;
+  background-color: #0a0e1a;
+  background-image: url('https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=2626');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-overflow-scrolling: touch;
+}
+
+::selection {
+  background: var(--accent-light);
+  color: var(--accent-blue);
+}
+
+*:focus-visible {
+  outline: 2px solid var(--accent-blue);
+  outline-offset: 2px;
+}
+
+/* iOS Safe Area Support */
+@supports (padding: max(0px)) {
+  body {
+    padding-left: max(0px, env(safe-area-inset-left));
+    padding-right: max(0px, env(safe-area-inset-right));
+  }
+}
+
+/* Prevent zoom on input focus (iOS) */
+input,
+textarea,
+select {
+  font-size: 16px !important;
+}
+
+/* Fix 100vh on mobile */
+.hero {
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: -webkit-fill-available;
+}
+
+/* Prevent text inflation on Android */
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+/* Better tap highlights */
+* {
+  -webkit-tap-highlight-color: rgba(0, 122, 255, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    font-size: 16px;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.section,
+.container {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Part 9: Loading & reduced motion */
+.lazy-image-wrapper {
+  background: var(--border-color);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.lazy-image-wrapper.loaded {
+  animation: none;
+  background: transparent;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

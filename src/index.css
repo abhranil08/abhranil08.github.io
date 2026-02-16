@@ -1,3 +1,9 @@
+@import "./styles/variables.css";
+@import "./styles/global.css";
+@import "./styles/ios-enhancements.css";
+@import "./styles/screenshot-fixes.css";
+@import "./styles/box-transparency.css";
+
 @font-face {
   font-family: "Agustina Regular";
   font-style: normal;
@@ -43,24 +49,5 @@
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
-}
-html,
-body {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-body {
-  margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-/* Media Query */
-@media (max-width: 1380px) {
-  html,
-  body {
-    font-size: 16px;
-    line-height: normal;
-  }
 }
 
