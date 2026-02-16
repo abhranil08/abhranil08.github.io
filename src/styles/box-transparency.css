@@ -1,0 +1,131 @@
+/**
+ * FIX BOX TRANSPARENCY – Matte glass boxes.
+ * Dark: rgba(255,255,255,0.05) + border 0.1 | Light: 0.15 + border 0.25 (matte).
+ * backdrop-filter blur(20px), border-radius 24px. No opaque backgrounds.
+ */
+
+/* ========== SHARED GLASS (dark theme default) ========== */
+/* Large content boxes: 24px radius */
+.greeting-main,
+.education-main .heading-div,
+.education-main .degree-card-inner,
+.education-main .degree-card .card-img,
+.education-main .cert-card,
+.projects-heading-div,
+.publications-heading-div,
+.experience-heading-div,
+.contact-heading-div,
+.blog-heading-div,
+.address-heading-div,
+.degree-card-inner,
+.achievements-main .degree-card-inner,
+.achievements-main .card-img {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 24px !important;
+  box-shadow: none !important;
+}
+
+/* Contact/blog/address heading boxes: ensure padding for card look */
+.contact-heading-div,
+.blog-heading-div,
+.address-heading-div {
+  padding: 2rem 2.5rem !important;
+}
+
+/* Smaller cards: 20px radius */
+.experience-card,
+.repo-card-div,
+.publication-card-div,
+.cert-card,
+.experience-card-logo-div {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 20px !important;
+  box-shadow: none !important;
+}
+
+/* Skills Home: glass boxes (inline style overridden) */
+.skills-desc-glass,
+#skills .skills-desc-glass {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 24px !important;
+  box-shadow: none !important;
+}
+
+/* Skills "Also: Background..." box – ::before provides the glass */
+.skills-secondary-wrap .skills-desc-glass.skills-also-glass::before {
+  background: rgba(255, 255, 255, 0.05) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 24px !important;
+  box-shadow: none !important;
+}
+
+/* ========== LIGHT THEME – matte boxes (tiny opacity increase) ========== */
+[data-theme="light"] .greeting-main,
+[data-theme="light"] .education-main .heading-div,
+[data-theme="light"] .education-main .degree-card-inner,
+[data-theme="light"] .education-main .degree-card .card-img,
+[data-theme="light"] .education-main .cert-card,
+body[data-theme="light"] .projects-heading-div,
+body[data-theme="light"] .publications-heading-div,
+body[data-theme="light"] .experience-heading-div,
+[data-theme="light"] .contact-heading-div,
+[data-theme="light"] .blog-heading-div,
+[data-theme="light"] .address-heading-div,
+[data-theme="light"] .degree-card-inner,
+[data-theme="light"] .achievements-main .degree-card-inner,
+[data-theme="light"] .achievements-main .card-img {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+[data-theme="light"] .experience-card,
+body[data-theme="light"] .repo-card-div,
+[data-theme="light"] .publication-card-div,
+[data-theme="light"] .cert-card,
+[data-theme="light"] .experience-card-logo-div {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+[data-theme="light"] .skills-desc-glass,
+body[data-theme="light"] #skills .skills-desc-glass {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+body[data-theme="light"] .skills-secondary-wrap .skills-desc-glass.skills-also-glass::before {
+  background: rgba(255, 255, 255, 0.15) !important;
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+}
+
+/* Cert card: keep smaller radius as before */
+.cert-card {
+  border-radius: 20px !important;
+}
+
+/* Repo / publication cards: keep 20px, hover state subtle */
+.repo-card-div:hover,
+.publication-card-div:hover {
+  border-color: rgba(255, 255, 255, 0.25) !important;
+}
+
+body[data-theme="light"] .repo-card-div:hover,
+[data-theme="light"] .publication-card-div:hover {
+  border-color: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* Experience card logo div: smaller radius */
+.experience-card-logo-div {
+  border-radius: 14px !important;
+}

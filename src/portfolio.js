@@ -374,7 +374,7 @@ const experience = {
           color: "#0ea5e9",
         },
         {
-          title: "SDE I – Analyst → SDE II – Associate",
+          title: "Senior Software Engineer (SDE I → SDE II)",
           company: "Goldman Sachs",
           company_url: "https://www.goldmansachs.com",
           logo_path: "goldmansachs_logo.svg",

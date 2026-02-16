@@ -1,0 +1,191 @@
+/**
+ * LIGHT MODE – readable body text (light/white), visible buttons, font hierarchy.
+ * Headings stay dark; boxes stay transparent (box-transparency.css).
+ */
+
+/* ========== 1. HEADINGS (h1, h2, h3) – nearly black, bold, shadow ========== */
+body[data-theme="light"] h1,
+body[data-theme="light"] h2,
+body[data-theme="light"] h3 {
+  color: #0a0f1e !important;
+  font-weight: 700 !important;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8) !important;
+}
+
+body[data-theme="light"] .greeting-text,
+body[data-theme="light"] .contact-heading-text,
+body[data-theme="light"] .blog-heading-text,
+body[data-theme="light"] .address-heading-text,
+body[data-theme="light"] .experience-heading-text,
+body[data-theme="light"] .projects-heading-text,
+body[data-theme="light"] .publications-heading-text,
+body[data-theme="light"] .heading-text,
+body[data-theme="light"] .skills-heading,
+body[data-theme="light"] .card-title,
+body[data-theme="light"] .achievements-main .card-title,
+body[data-theme="light"] .repo-name,
+body[data-theme="light"] .publication-name {
+  color: #0a0f1e !important;
+  font-weight: 700 !important;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8) !important;
+}
+
+/* ========== 2. SUBHEADINGS – very dark ========== */
+body[data-theme="light"] .experience-heading-sub-text,
+body[data-theme="light"] .projects-heading-sub-text,
+body[data-theme="light"] .heading-sub-text {
+  color: #1a1f2e !important;
+  font-weight: 600 !important;
+}
+
+/* ========== 3. BODY TEXT (p, descriptions) – LIGHT/WHITE, readable ========== */
+body[data-theme="light"] .greeting-text-p,
+body[data-theme="light"] .greeting-text-p.subTitle,
+body[data-theme="light"] .contact-header-detail-text,
+body[data-theme="light"] .blog-header-detail-text,
+body[data-theme="light"] .experience-header-detail-text,
+body[data-theme="light"] .projects-header-detail-text,
+body[data-theme="light"] .repo-description,
+body[data-theme="light"] .publication-description,
+body[data-theme="light"] .content-list,
+body[data-theme="light"] .experience-card-content-list,
+body[data-theme="light"] .achievements-main .content-list,
+body[data-theme="light"] .skills-desc-line,
+body[data-theme="light"] .skills-secondary-label,
+body[data-theme="light"] .cert-body-title,
+body[data-theme="light"] .cert-body-subtitle,
+body[data-theme="light"] .experience-card-description,
+body[data-theme="light"] p.subTitle,
+body[data-theme="light"] p {
+  color: #e8eaed !important;
+  font-weight: 400 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ========== 4. META TEXT (dates, locations) – light gray ========== */
+body[data-theme="light"] .subTitle,
+body[data-theme="light"] .card-subtitle,
+body[data-theme="light"] .achievements-main .card-subtitle,
+body[data-theme="light"] .duration,
+body[data-theme="light"] .degree-card .duration,
+body[data-theme="light"] .experience-card-duration,
+body[data-theme="light"] .experience-card-location,
+body[data-theme="light"] .repo-creation-date,
+body[data-theme="light"] .publication-creation-date.subTitle {
+  color: #cbd5e1 !important;
+  font-weight: 400 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ========== 5. COMPANY NAMES – light purple ========== */
+body[data-theme="light"] .experience-card-company > a {
+  color: #c4b5fd !important;
+  font-weight: 400 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ========== 6. OTHER LINKS (repo/project titles, etc.) ========== */
+body[data-theme="light"] a:not(.header .menu a):not(.nav-links a):not(.mobile-nav-links a):not(.main-button) {
+  color: #c4b5fd !important;
+  font-weight: 500 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+body[data-theme="light"] .repo-name-div a,
+body[data-theme="light"] .publication-card-div a,
+body[data-theme="light"] .content a {
+  color: #c4b5fd !important;
+}
+
+body[data-theme="light"] .experience-card-company > a:hover,
+body[data-theme="light"] .repo-name-div a:hover,
+body[data-theme="light"] .publication-card-div a:hover {
+  color: #ddd6fe !important;
+}
+
+/* ========== 7. BUTTONS – solid purple, white text, visible ========== */
+body[data-theme="light"] .main-button,
+body[data-theme="light"] .button-greeting-div .main-button,
+body[data-theme="light"] .button-greeting-github .main-button,
+body[data-theme="light"] .resume-btn-div .main-button,
+body[data-theme="light"] .address-btn-div .main-button,
+body[data-theme="light"] .project-button .main-button {
+  background: #7c3aed !important;
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  text-shadow: none !important;
+  border-color: #7c3aed !important;
+}
+
+body[data-theme="light"] .main-button:hover,
+body[data-theme="light"] .button-greeting-div .main-button:hover,
+body[data-theme="light"] .resume-btn-div .main-button:hover,
+body[data-theme="light"] .address-btn-div .main-button:hover,
+body[data-theme="light"] .project-button .main-button:hover {
+  background: #6d28d9 !important;
+  color: #ffffff !important;
+  border-color: #6d28d9 !important;
+  text-shadow: none !important;
+}
+
+/* ========== SPECIFIC PAGE FIXES (headings stay dark; body/meta use light) ========== */
+body[data-theme="light"] .contact-header-detail-text {
+  color: #e8eaed !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+body[data-theme="light"] .greeting-text-p.subTitle {
+  color: #e8eaed !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+body[data-theme="light"] .experience-header-detail-text {
+  color: #e8eaed !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+body[data-theme="light"] .projects-header-detail-text {
+  color: #e8eaed !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+body[data-theme="light"] .repo-card-div .repo-description {
+  color: #e8eaed !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+body[data-theme="light"] .repo-card-div {
+  color: #e8eaed !important;
+}
+body[data-theme="light"] .publication-card-div {
+  color: #e8eaed !important;
+}
+
+body[data-theme="light"] .education-main .heading-sub-text {
+  color: #1a1f2e !important;
+  font-weight: 600 !important;
+}
+
+body[data-theme="light"] .achievements-main .card-subtitle,
+body[data-theme="light"] .achievements-main .duration {
+  color: #cbd5e1 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+body[data-theme="light"] .achievements-main .content-list {
+  color: #e8eaed !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+body[data-theme="light"] .footer-text {
+  color: #cbd5e1 !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* ========== 8. FONT SIZE HIERARCHY – "What I Do?" section ========== */
+body[data-theme="light"] #skills .skills-header,
+#skills .skills-header {
+  font-size: clamp(48px, 10vw, 72px) !important;
+}
+
+body[data-theme="light"] #skills .skills-text-div .skills-heading,
+#skills .skills-text-div .skills-heading {
+  font-size: clamp(28px, 5vw, 36px) !important;
+}

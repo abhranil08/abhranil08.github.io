@@ -27,9 +27,6 @@ class ExperienceCard extends Component {
           .join("")
       : "";
     const logoSrc = this.getLogoSrc(experience);
-    const titleParts = experience["title"] && experience["title"].includes(" → ")
-      ? experience["title"].split(" → ")
-      : null;
     return (
       <div
         className="experience-card"
@@ -52,20 +49,12 @@ class ExperienceCard extends Component {
         <div className="experience-card-body-div">
           <div className="experience-card-header-div">
             <div className="experience-card-heading-left">
-              {titleParts ? (
-                <div className="experience-card-title-progression" style={{ color: theme.text }}>
-                  <span className="experience-card-pill">{titleParts[0].trim()}</span>
-                  <span className="experience-card-pill-arrow" aria-hidden="true">→</span>
-                  <span className="experience-card-pill">{titleParts[1].trim()}</span>
-                </div>
-              ) : (
-                <h3
-                  className="experience-card-title"
-                  style={{ color: theme.text }}
-                >
-                  {experience["title"]}
-                </h3>
-              )}
+              <h3
+                className="experience-card-title"
+                style={{ color: theme.text }}
+              >
+                {experience["title"]}
+              </h3>
               <p
                 className="experience-card-company"
                 style={{ color: theme.text }}

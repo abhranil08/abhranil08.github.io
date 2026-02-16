@@ -92,6 +92,63 @@
   }
 }
 
+/* A. Achievements hero: trophy left 200px, title + description right, glass */
+.achievements-hero {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2.5rem;
+  align-items: center;
+  padding: 2.75rem 2.5rem !important;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.1) !important;
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  margin-bottom: 2rem;
+}
+
+.achievements-hero-img-wrap {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.achievements-hero-img-wrap .achievement-trophy-inner {
+  width: 200px;
+  height: 200px;
+}
+
+.achievements-hero-img-wrap .achievement-trophy-icon {
+  font-size: 120px;
+}
+
+.achievements-hero-text {
+  min-width: 0;
+}
+
+.achievements-hero-title {
+  font-size: clamp(32px, 6vw, 48px);
+  font-weight: 700;
+  margin: 0 0 0.5rem 0;
+  line-height: 1.2;
+}
+
+.achievements-hero-desc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .achievements-hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem 1.5rem !important;
+  }
+}
+
 .achievement-content-wrap {
   flex: 1;
   min-width: 0;

@@ -3,11 +3,11 @@ import { materialDarkTheme, materialLightTheme } from "../theme";
 
 const STORAGE_KEY = "portfolio-theme";
 
+/** Default is dark; only return light when user explicitly chose "light". */
 export function getStoredTheme() {
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored === "light") return materialLightTheme;
-    if (stored === "dark") return materialDarkTheme;
   } catch (e) {}
   return materialDarkTheme;
 }

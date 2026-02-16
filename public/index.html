@@ -82,6 +82,17 @@
   <body>
     <script>
       (function() {
+        var key = "portfolio-theme";
+        try {
+          var stored = typeof localStorage !== "undefined" && localStorage.getItem(key);
+          document.body.setAttribute("data-theme", stored === "light" ? "light" : "dark");
+        } catch (e) {
+          document.body.setAttribute("data-theme", "dark");
+        }
+      })();
+    </script>
+    <script>
+      (function() {
         function stripHash() {
           if (location.pathname === "/" && (location.hash === "#/" || location.hash === "#")) {
             history.replaceState(null, "", "/");

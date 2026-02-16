@@ -38,15 +38,21 @@ class SkillSection extends Component {
                 <div>
                   <div className="skills-desc-glass" style={getGlassStyle(theme)}>
                     <div className="skills-desc-block">
-                      {skill.skills.map((skillSentence, i) => (
-                        <p
-                          key={i}
-                          className="subTitle skills-text skills-desc-line"
-                          style={{ color: theme.secondaryText }}
-                        >
-                          {skillSentence}
-                        </p>
-                      ))}
+                      {skill.skills.map((skillSentence, i) => {
+                        const trimmed = String(skillSentence).trim();
+                        const hasLightning = trimmed.startsWith("⚡");
+                        const content = hasLightning ? trimmed.slice(1).trim() : trimmed;
+                        return (
+                          <p
+                            key={i}
+                            className="subTitle skills-text skills-desc-line"
+                            style={{ color: "#ffffff" }}
+                          >
+                            {hasLightning && <span className="lightning-icon" aria-hidden="true">⚡ </span>}
+                            {content}
+                          </p>
+                        );
+                      })}
                     </div>
                   </div>
                 </div>
@@ -69,7 +75,7 @@ class SkillSection extends Component {
         {secondarySkills.length > 0 && (
           <div className="skills-secondary-wrap">
             <div className="skills-desc-glass skills-also-glass" style={getGlassStyle(theme)}>
-              <p className="skills-secondary-label" style={{ color: theme.body === "#020617" ? theme.secondaryText : "#2b1958" }}>
+              <p className="skills-secondary-label" style={{ color: theme.secondaryText }}>
                 Also: Background in {secondarySkills.map((s) => s.title).join(" & ")} (research & internships).
               </p>
             </div>

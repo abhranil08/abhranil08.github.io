@@ -1,25 +1,25 @@
-/* Wrapper: position relative, inline-block */
+/* Wrapper: position relative, inline-block – NO box, NO border */
 .achievement-trophy-wrap {
   position: relative;
   display: inline-block;
 }
 
-/* Inner: 120x120, relative, inline-flex */
+/* Inner: responsive with clamp, 180px on desktop */
 .achievement-trophy-inner {
-  width: 120px;
-  height: 120px;
+  width: clamp(120px, 15vw, 180px);
+  height: clamp(120px, 15vw, 180px);
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Glow via ::before */
+/* Glow via ::before – responsive size */
 .achievement-trophy-wrap::before {
   content: "";
   position: absolute;
-  width: 140px;
-  height: 140px;
+  width: clamp(140px, 18vw, 200px);
+  height: clamp(140px, 18vw, 200px);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -33,50 +33,23 @@
   pointer-events: none;
 }
 
-/* Trophy emoji */
-.achievement-trophy-emoji {
-  font-size: 80px;
+/* Trophy icon: responsive with clamp, bigger on desktop */
+.achievement-trophy-icon {
+  font-size: clamp(80px, 12vw, 120px);
   line-height: 1;
   z-index: 1;
   position: relative;
+  filter: drop-shadow(0 4px 16px rgba(0, 122, 255, 0.2));
 }
 
 @keyframes gentlePulse {
   0%,
   100% {
-    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.4;
   }
   50% {
-    opacity: 0.6;
-  }
-}
-
-/* Bigger trophy on medium screens */
-@media (min-width: 768px) {
-  .achievement-trophy-inner {
-    width: 160px;
-    height: 160px;
-  }
-  .achievement-trophy-emoji {
-    font-size: 106px;
-  }
-  .achievement-trophy-wrap::before {
-    width: 186px;
-    height: 186px;
-  }
-}
-
-/* Even bigger on large screens */
-@media (min-width: 1024px) {
-  .achievement-trophy-inner {
-    width: 200px;
-    height: 200px;
-  }
-  .achievement-trophy-emoji {
-    font-size: 133px;
-  }
-  .achievement-trophy-wrap::before {
-    width: 233px;
-    height: 233px;
+    transform: translate(-50%, -50%) scale(1.08);
+    opacity: 0.7;
   }
 }
