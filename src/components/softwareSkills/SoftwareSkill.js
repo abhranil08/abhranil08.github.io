@@ -10,7 +10,11 @@ class SoftwareSkill extends React.Component {
         <div className="software-skills-main-div">
           <ul className="dev-icons">
             {this.props.logos.map((logo) => {
-              const color = (logo.style && logo.style.color) || "#64748b";
+              const theme = this.props.theme;
+              const isLight = theme && theme.body === "#ffffff";
+              const color = isLight
+                ? ((logo.style && logo.style.color) || "#1e293b")
+                : ((logo.style && logo.style.color) || "#64748b");
               const iconStyle = { ...(logo.style || {}), color, fill: color };
               const useLogoImage = logo.logoImage && getImageUrl(logo.logoImage);
               const tooltip = (

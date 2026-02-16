@@ -8,6 +8,7 @@ import EducationImg from "./EducationImg";
 import { certifications } from "../../portfolio";
 import "./EducationComponent.css";
 import { Fade } from "react-reveal";
+import { getHeaderGlassStyle } from "../../utils/glassStyle";
 
 class Education extends Component {
   render() {
@@ -17,7 +18,7 @@ class Education extends Component {
         <Header theme={this.props.theme} />
         <div className="basic-education">
           <Fade bottom duration={2000} distance="40px">
-            <div className="heading-div">
+            <div className="heading-div" style={{ ...getHeaderGlassStyle(theme), borderRadius: "24px" }}>
               <div className="heading-img-div">
                 {/* <img
 									src={require("../../assests/images/education.svg")}

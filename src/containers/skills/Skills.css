@@ -3,6 +3,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 3rem 1.5rem 4rem;
+  background: transparent !important;
 }
 
 .skills-main-div {
@@ -26,6 +27,17 @@
   font-size: 20px;
 }
 
+/* Same as greeting subTitle (Senior Software Engineer…): font, size, weight, color */
+.skills-desc-line {
+  font-size: 1.1rem !important;
+  line-height: 1.6 !important;
+  font-family: "Google Sans Medium" !important;
+  font-weight: 500 !important;
+}
+body[data-theme="light"] #skills .skills-desc-line {
+  color: #2b1958 !important;
+}
+
 .skills-left-col {
   grid-column: 1;
   grid-row: 1;
@@ -38,8 +50,16 @@
   flex: 0 0 auto;
 }
 
-.skills-desc-block {
+/* Bullet text box: layout only – glass = .greeting-main (inline in SkillSection.js), radius 24px to match */
+.skills-desc-glass {
   margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  max-width: 100%;
+}
+
+
+.skills-desc-block {
+  margin-top: 0;
   margin-left: 0;
   padding-left: 0;
   flex: 0 0 auto;
@@ -84,19 +104,44 @@
   margin-bottom: 0.5rem;
 }
 
+/* "Also: Background..." – same transparent glass as Java/Node; forced here so nothing overrides */
 .skills-secondary-wrap {
   max-width: 640px;
   margin: 2rem auto 0;
+  background: transparent !important;
+}
+/* Glass via ::before so backdrop-filter sees the page background */
+.skills-secondary-wrap .skills-desc-glass.skills-also-glass {
+  position: relative;
+  margin-top: 0;
   padding: 1rem 1.5rem;
   text-align: center;
-  border-radius: 14px;
-  background: rgba(15, 23, 42, 0.5);
-  border: 1px solid rgba(148, 163, 184, 0.2);
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  overflow: hidden;
+  border-radius: 24px;
 }
-
-[data-theme="light"] .skills-secondary-wrap {
-  background: rgba(248, 245, 255, 0.9);
-  border-color: rgba(124, 86, 194, 0.25);
+.skills-secondary-wrap .skills-desc-glass.skills-also-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: 24px;
+  background: rgba(15, 23, 42, 0.38);
+  backdrop-filter: blur(24px) saturate(1.1);
+  -webkit-backdrop-filter: blur(24px) saturate(1.1);
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.18), 0 0 0 1px rgba(148, 163, 184, 0.05);
+}
+.skills-secondary-wrap .skills-desc-glass.skills-also-glass .skills-secondary-label {
+  position: relative;
+  z-index: 1;
+}
+body[data-theme="light"] .skills-secondary-wrap .skills-desc-glass.skills-also-glass::before {
+  background: rgba(255, 255, 255, 0.5);
+  border-color: rgba(124, 86, 194, 0.2);
+  box-shadow: 0 16px 48px rgba(124, 86, 194, 0.05), 0 0 0 1px rgba(124, 86, 194, 0.04);
 }
 
 .skills-secondary-label {
@@ -106,8 +151,13 @@
   font-family: "Google Sans Regular";
 }
 
-[data-theme="light"] .skills-secondary-wrap .skills-secondary-label {
-  color: #4c2b91 !important;
+body[data-theme="light"] .skills-secondary-wrap .skills-secondary-label,
+body[data-theme="light"] .skills-secondary-label {
+  color: #2b1958 !important;
+  font-family: "Google Sans Medium" !important;
+  font-size: 1.1rem !important;
+  line-height: 1.6 !important;
+  font-weight: 500 !important;
 }
 
 /* Media Query */
@@ -118,9 +168,9 @@
   .skills-header {
     font-size: 50px;
   }
-  /* .skills-image-div > img {
-    margin-top: 0px;
-  } */
+  .skills-desc-line {
+    font-size: 1rem !important;
+  }
 }
 /* Small screens: same horizontal padding as Experience (no gap from screen edge) */
 @media (max-width: 768px) {
@@ -163,12 +213,17 @@
     grid-column: 1;
     grid-row: 2;
     margin: 0;
+    margin-top: 1.5rem;
   }
   .skills-desc-block {
     margin-top: 1.25rem;
   }
   .skills-text {
     font-size: 16px;
+  }
+  .skills-desc-line {
+    font-size: 0.95rem !important;
+    line-height: normal !important;
   }
   .skills-text-subtitle {
     font-size: 16px;

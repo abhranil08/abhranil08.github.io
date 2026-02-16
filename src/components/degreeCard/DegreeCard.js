@@ -1,17 +1,19 @@
 import React, { Component } from "react";
 import "./DegreeCard.css";
 import { Fade, Flip } from "react-reveal";
+import { getHeaderGlassStyle } from "../../utils/glassStyle";
 
 class DegreeCard extends Component {
   render() {
     const degree = this.props.degree;
     const theme = this.props.theme;
+    const glassStyle = getHeaderGlassStyle(theme);
     return (
       <div className="degree-card">
-        <div className="degree-card-inner">
+        <div className="degree-card-inner" style={{ ...glassStyle, borderRadius: "24px" }}>
           {degree.logo_path && (
             <Flip left duration={2000}>
-              <div className="card-img">
+              <div className="card-img" style={{ ...glassStyle, borderRadius: "12px" }}>
                 <img
                   src={require(`../../assests/images/${degree.logo_path}`)}
                   alt={degree.alt_name}
