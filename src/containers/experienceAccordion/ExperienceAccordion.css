@@ -36,6 +36,10 @@
   gap: 1.1rem;
 }
 
+.experience-card-wrap {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
   .experience-accord {
     margin-top: 2.5rem;
