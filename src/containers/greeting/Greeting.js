@@ -5,13 +5,14 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
+import { getGlassStyle } from "../../utils/glassStyle";
 
 export default function Greeting(props) {
   const theme = props.theme;
   return (
     <Fade bottom duration={2000} distance="40px">
       <div className="greet-main" id="greeting">
-        <div className="greeting-main">
+        <div className="greeting-main" style={getGlassStyle(theme)}>
           <div className="greeting-text-div">
             <div>
               <h1 className="greeting-text" style={{ color: theme.text }}>

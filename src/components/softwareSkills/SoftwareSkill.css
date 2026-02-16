@@ -89,6 +89,14 @@
   color: #645beb;
 }
 
+/* Light mode: keep original icon colors but darken so they're clearly visible (no black) */
+body[data-theme="light"] .software-skill-inline .software-skill-icon-wrap {
+  filter: brightness(0.72) contrast(1.15);
+}
+body[data-theme="light"] .software-skill-inline .software-skill-logo-img {
+  filter: brightness(0.72) contrast(1.15) !important;
+}
+
 /* Solid box tooltip like LinkedIn/GitHub on home (native tooltip look) */
 .software-skill-tooltip {
   z-index: 1060;

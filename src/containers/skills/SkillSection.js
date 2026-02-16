@@ -7,6 +7,7 @@ import DataScienceImg from "./DataScienceImg";
 import FullStackImg from "./FullStackImg";
 import CloudInfraImg from "./CloudInfraImg";
 import DesignImg from "./DesignImg";
+import { getGlassStyle } from "../../utils/glassStyle";
 
 function GetSkillSvg(props) {
   if (props.fileName === "DataScienceImg")
@@ -34,16 +35,20 @@ class SkillSection extends Component {
                 </div>
               </Fade>
               <Fade left duration={2000}>
-                <div className="skills-desc-block">
-                  {skill.skills.map((skillSentence, i) => (
-                    <p
-                      key={i}
-                      className="subTitle skills-text"
-                      style={{ color: theme.secondaryText }}
-                    >
-                      {skillSentence}
-                    </p>
-                  ))}
+                <div>
+                  <div className="skills-desc-glass" style={getGlassStyle(theme)}>
+                    <div className="skills-desc-block">
+                      {skill.skills.map((skillSentence, i) => (
+                        <p
+                          key={i}
+                          className="subTitle skills-text skills-desc-line"
+                          style={{ color: theme.secondaryText }}
+                        >
+                          {skillSentence}
+                        </p>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </Fade>
             </div>
@@ -55,7 +60,7 @@ class SkillSection extends Component {
                 </h1>
               </Fade>
               <Fade right duration={1500}>
-                <SoftwareSkill logos={skill.softwareSkills} />
+                <SoftwareSkill logos={skill.softwareSkills} theme={theme} />
               </Fade>
             </div>
           </div>
@@ -63,9 +68,11 @@ class SkillSection extends Component {
 
         {secondarySkills.length > 0 && (
           <div className="skills-secondary-wrap">
-            <p className="skills-secondary-label" style={{ color: theme.secondaryText }}>
-              Also: Background in {secondarySkills.map((s) => s.title).join(" & ")} (research & internships).
-            </p>
+            <div className="skills-desc-glass skills-also-glass" style={getGlassStyle(theme)}>
+              <p className="skills-secondary-label" style={{ color: theme.body === "#020617" ? theme.secondaryText : "#2b1958" }}>
+                Also: Background in {secondarySkills.map((s) => s.title).join(" & ")} (research & internships).
+              </p>
+            </div>
           </div>
         )}
       </div>

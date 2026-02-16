@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./CertificationCard.css";
 import { Fade } from "react-reveal";
+import { getHeaderGlassStyle } from "../../utils/glassStyle";
 
 class CertificationCard extends Component {
   render() {
@@ -12,7 +13,7 @@ class CertificationCard extends Component {
         String(certificate.color_code || "").toLowerCase().startsWith("#000"));
     return (
       <Fade bottom duration={2000} distance="20px">
-        <div className={`cert-card${isDarkLogo ? " cert-card--dark-logo" : ""}`}>
+        <div className={`cert-card${isDarkLogo ? " cert-card--dark-logo" : ""}`} style={{ ...getHeaderGlassStyle(theme), borderRadius: "12px" }}>
           <div className="content">
             <a
               href={certificate.certificate_link}
