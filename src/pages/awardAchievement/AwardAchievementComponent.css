@@ -16,6 +16,10 @@
     padding-right: 0.75rem;
     box-sizing: border-box;
   }
+  .achievements-main .basic-education {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
 }
 
 @media (max-width: 480px) {
@@ -25,6 +29,10 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   }
+  .achievements-main .basic-education {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
 }
 
 .basic-education {
@@ -33,6 +41,12 @@
   padding: 3rem 1.5rem 4rem;
   box-sizing: border-box;
   min-width: 0;
+}
+
+/* Achievements page: same horizontal gap as Experience/Projects – !important so no other sheet overrides */
+.achievements-main .basic-education {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
 }
 
 .heading-div {
@@ -122,18 +136,17 @@
   }
 }
 
-/* Small screens: same horizontal padding as Experience / Projects */
 @media (max-width: 768px) {
   .achievements-main .basic-education {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
 }
 
 @media (max-width: 480px) {
   .achievements-main .basic-education {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
   }
 }
 

@@ -7,9 +7,14 @@
 
 .certs-body-div {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
+  gap: 1.25rem;
+  padding: 0 0 2rem;
+  box-sizing: border-box;
 }
+
+/* No extra horizontal padding – gap comes only from page (basic-education) so it matches other pages */
 
 @media (max-width: 1380px) {
   .certs-header {

@@ -1,11 +1,53 @@
 .education-main {
   width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Same header/content gap as Experience, Projects, Contact – use same values at 1024px */
+@media (max-width: 1024px) {
+  .education-main .header {
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    box-sizing: border-box;
+  }
+  .education-main .basic-education {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  .education-main,
+  .education-main .basic-education {
+    overflow-x: hidden;
+  }
+  .education-main .basic-education,
+  .education-main .heading-div {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-main .header {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
 }
 
 .basic-education {
   max-width: 1120px;
   margin: 0 auto;
   padding: 3rem 1.5rem 4rem;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+/* Education page: same horizontal gap as Experience/Projects – !important so no other sheet overrides */
+.education-main .basic-education {
+  padding-left: 0.75rem !important;
+  padding-right: 0.75rem !important;
 }
 
 .heading-div {
@@ -24,7 +66,7 @@
 
 .heading-text-div {
   text-align: center;
-  padding: 0 1rem;
+  padding: 0;
   min-width: 0;
 }
 
@@ -72,25 +114,21 @@
   }
 }
 
-/* Small screens: same horizontal padding as Experience (no gap from screen edge) */
 @media (max-width: 768px) {
-  .basic-education {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
+  .education-main .basic-education {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
   }
 }
 
 @media (max-width: 480px) {
-  .basic-education {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+  .education-main .basic-education {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
   }
 }
 
 @media (max-width: 768px) {
-  .heading-text-div {
-    padding: 0 0.5rem;
-  }
   .heading-text {
     font-size: 30px;
     margin-top: 20px;
